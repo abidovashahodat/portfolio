@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0px;
+            height: 100vh;
+            overflow-x: hidden;
+            
+        }
+
+        .container {
+            max-width: 1450px;
+            min-width: 1400px;
+        }
+
+        .head {
+            margin-left: 40px;
+        }
+
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 130px;
+            background-color: white;
+
+
+        }
+
+        .one {
+            position: relative;
+            display: inline-block;
+            margin-top: 50px;
+
+
+
+        }
+
+        .one::before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-image: url(icon.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: -20px;
+
+
+        }
+
+
+
+        .nav-head ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding-right: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-head ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .contact {
+            background-color: rgb(35, 141, 246);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 50px;
+            width: 130px;
+            box-shadow: 5px 0 15px 0 black;
+            margin-right: 80px;
+        }
+
+        .first {
+            background-image: url(one.jpg);
+            background-repeat: no-repeat;
+            height: 600px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .underheader {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            padding-left: 30px;
+        }
+
+        .img-one {
+            width: 20%;
+            padding-left: 150px;
+            padding-right: 200px;
+        }
+
+        .solution {
+            color: rgb(17, 64, 235);
+        }
+
+        h1 {
+            font-size: 90px;
+            margin-top: 5px;
+            line-height: 85px;
+        }
+
+        .underwrite {
+            font-size: 20px;
+            line-height: 20px;
+            margin-top: -20px;
+
+
+        }
+
+        .btn {
+            margin-top: 10px;
+            background-color: rgb(17, 39, 211);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 50px;
+            width: 150px;
+            box-shadow: 5px 0 15px 0 black;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(11, 23, 113);
+        }
+
+        .about-me {
+            height: 1000px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 80px;
+            margin-top: 50px;
+            padding: 0px 10px;
+        }
+
+        .achievements {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 120px;
+        }
+
+
+        .achieve {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-right: 50px;
+        }
+
+        .achieve h3 {
+            font-size: 40px;
+            margin-top: 0px;
+        }
+
+        .list-about {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+            padding-right: 80px;
+
+        }
+
+        .list-about nav ul li {
+            list-style: none;
+            line-height: 50px;
+
+
+        }
+
+
+
+        .about-content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .offer {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .offer-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            padding: 35px;
+
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 5px 0 15px 0 gray;
+            border-radius: 10px;
+            width: 250px;
+            height: 250px;
+            transition: all 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px) scale(1.03);
+            background-color: antiquewhite;
+        }
+
+        h2 {
+            font-size: 60px;
+            line-height: 50px;
+            margin-top: 2px;
+        }
+        .experience{
+            height: 800px;
+            text-align: center;
+            background-color: #bcd9f7;
+        }
+        .section {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        }
+
+       .left {
+       display: flex;
+       align-items: center;
+       gap: 12px;
+       min-width: 200px;
+       position: relative;
+       }
+
+       .left::before {
+       content: "";
+       position: absolute;
+       left: 10px;
+       top: -70px;
+       width: 3px;
+       height: 230px;
+       background: gray;
+        }
+
+      .dot {
+        width: 15px;
+        height: 15px;
+        background: #1e90ff;
+        border-radius: 50%;
+        position: absolute;
+        left: 4px;
+
+        }
+         .section h2 {
+         font-size: 20px;
+         margin-top: 19px;
+         margin-left: 30px;
+         }
+
+        .section-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 25px;
+        gap: 30px;
+        width: 1000px;
+          }
+           .item{
+            flex: 1;
+           }
+
+
+.item h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.item p {
+  color: #555;
+  font-size: 14px;
+}
+
+
+
+        .logo {
+            width: 250px;
+            height: 80px;
+
+
+        }
+
+        .img-1 {
+            grid-area: img1;
+
+        }
+
+        .img-1:hover {
+            box-shadow: 0 10px 20px 0 black;
+        }
+
+        .img-2 {
+            grid-area: img2;
+
+        }
+
+        .img-2:hover {
+            box-shadow: 0 10px 20px 0 black;
+        }
+
+        .img-3 {
+            grid-area: img3;
+
+        }
+
+        .img-3:hover {
+            box-shadow: 0 10px 20px 0 black;
+        }
+
+        .img-4 {
+            grid-area: img4;
+
+        }
+
+        .img-4:hover {
+            box-shadow: 0 10px 20px 0 black;
+        }
+
+        .img-5:hover {
+            box-shadow: 0 10px 20px 0 black;
+        }
+
+        .img-5 {
+            grid-area: img5;
+
+        }
+
+        .img-6 {
+            grid-area: img6;
+
+        }
+
+        .img-6:hover {
+            box-shadow: 0 10px 20px 0 black;
+        }
+
+        .img-7 {
+            grid-area: img-7;
+        }
+
+        .img-7:hover {
+            box-shadow: 0 10px 20px 0 black;
+        }
+
+        .img-8 {
+            grid-area: img-8;
+        }
+
+        .img-8:hover {
+            box-shadow: 0 10px 20px 0 black;
+        }
+
+        .gallery {
+            width: 1000px;
+            display: grid;
+            grid-template-areas:
+                "img1 img2 img3"
+                "img4 img5 img6";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 220px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        .gallery2 {
+            width: 1000px;
+            display: grid;
+            grid-template-areas:
+                "img-7 img-8";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 220px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        
+
+        .latest {
+            margin-left: 5px;
+            margin-top: 20px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+    
+        }
+
+       
+
+        .latestcards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .latestimg{
+            transition:  0.9 ease;
+        }
+
+        .latestimg:hover{
+            opacity: 0.8;
+            transform: translateY(-5px) scale(1.03);
+        }
+
+
+        .latestcard {
+            width: 500px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .p1
+        {
+            border: 1px solid rgb(186, 180, 180);
+
+        }
+         .p1 :hover
+         {
+         box-shadow: 0 10px 10px 0 gray;
+        }
+
+
+
+        .latestcard a {
+            text-decoration: none;
+            color: rgb(64, 109, 193);
+        }
+
+        .reputed-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+
+    
+
+        .card1 {
+            width: 400px;
+            height: 200px;
+            background-color: rgb(198, 218, 247);
+            text-align: center;
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cards h4 {
+            margin-left: 10px;
+            text-align: left;
+        }
+
+        .client {
+            text-align: left;
+            margin-left: 10px;
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 20px;
+            margin-top: -10px;
+        }
+
+        .undertext {
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: left;
+        }
+
+        .rounded {
+            border-radius: 50px;
+        }
+
+        .contactcontainer{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 25px;
+        }
+
+                    form{
+                        flex: 1;
+                    }
+
+                    .address{
+                        flex:1;
+                        margin-right: -720px;
+                    }
+
+
+                    .address h3 ,.numb,.add,.mail{
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        cursor: pointer;
+                    }
+
+                    .numb:hover{
+                        color: rgb(23, 132, 205);
+                    }
+
+                    .add:hover{
+                     color: rgb(23, 132, 205);   
+                    }
+                    .mail:hover{
+                    color: rgb(23, 132, 205);
+                }
+
+
+        .contacts{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            height: 150px;
+            width: 700px;
+            margin-left: -70px;
+        }
+
+        textarea{
+            display: flex;
+            margin-top: 10px;
+            width: 695px;
+            height: 70px;
+            margin-left: -70px;
+        }
+ 
+         form button{
+            margin-left: -70px;
+         }
+
+         form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 50px;
+         }
+
+         form input ,textarea{
+            border: 1px solid rgb(34, 135, 213);
+         }
+
+         
+
+
+        footer {
+            background-color: black;
+            color: white;
+            height: 400px;
+            padding: 38px;
+            margin-left: -10px;
+            margin-bottom: -100px;
+
+
+
+        }
+
+        .footwrite {
+            font-size: 20px;
+            line-height: 20px;
+            padding-top: 10px;
+            padding-left: -20px;
+
+        }
+
+        .mail {
+            font-size: 30px;
+            padding-top: -10px;
+        }
+
+        .mail a {
+
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 17px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: white;
+            margin-left: -30px;
+            line-height: 30px;
+        }
+
+        .footer-links nav ul {
+            list-style: none;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid gray;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        .footer-bottom a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        .rights {
+            display: flex;
+            gap: 60px;
+        }
+
+        .logofoot {
+            margin-top: -80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <div class="head">
+                    <img src="logo.jpg" width="250px" height="80px">
+                </div>
+            </div>
+
+            <nav class="nav-head">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonial</a></li>
+            </nav>
+            <button class="contact">Contact Us</button>
+        </header>
+        <main>
+            <div class="first">
+                <div class="underheader">
+                    <p class="one">
+                        I am a Frontend Developer
+                    </p>
+                    <h1>Creative Design and Web <span class="solution">Solutions</span></h1>
+                    <p class="underwrite">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam, quod.
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam, quod.
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam, quod.
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam, quod.
+                        Lorem ipsum dolor sit amet consectetur
+                    </p>
+                    <button class="btn">Download my CV</button>
+                </div>
+                <div class="img-one">
+                    <img src="first.jpg" width="400px" height="350px">
+                </div>
+            </div>
+
+            <div class="about-me">
+                <div class="about-img">
+                    <img src="about.jpg" width="600px" height="800px">
+                </div>
+                <div class="about-content">
+                    <p class="one">About Me</p>
+                    <h2>From Idea to Code - I'll Make It Work</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus, perferendis? Fugit, iusto quasi. Dolor tempora
+                        exercitationem pariatur nesciunt, enim mollitia neque quam,
+                        obcaecati quas quia a placeat autem temporibus molestiae?
+                    </p>
+                    <div class="achievements">
+                        <div class="achieve">
+                            <h3>25+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="achieve">
+                            <h3>0+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                    <div class="list-about">
+                        <nav>
+                            <ul>
+                                <li>✔️ Clean and efficient code</li>
+                                <li>✔️ Web Frontend Development</li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul>
+                                <li>✔️ Innovative and User-friendly solutions</li>
+                                <li>✔️ Unlimmited revisions & support</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button class="btn">Download my CV</button>
+                </div>
+            </div>
+            <div class="offer">
+                <p class="one">My Service</p>
+                <h2>SERVICES I OFFER</h2>
+                <div class="offer-cards">
+                    <div class="card">
+                        <img src="web.jpg" width="80px" height="80px">
+                        <h4>Web Developer</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus, perferendis? Fugit, iusto quasi. Dolor tempora
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="mobile.jpg" width="80px" height="80px">
+                        <h4>Mobile App</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus, perferendis? Fugit, iusto quasi. Dolor tempora
+
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="uxui.jpg" width="80px" height="80px">
+                        <h4>UI/UX Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus, perferendis? Fugit, iusto quasi. Dolor tempora
+
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="graffic.jpg" width="80px" height="80px">
+                        <h4>Graffic Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus, perferendis? Fugit, iusto quasi. Dolor tempora
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="seo.jpg" width="80px" height="80px">
+                        <h4>SEO Optimisation</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus, perferendis? Fugit, iusto quasi. Dolor tempora
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="wordpress.jpg" width="80px" height="80px">
+                        <h4>WordPress Developer</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus, perferendis? Fugit, iusto quasi. Dolor tempora
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="app-develop.jpg" width="80px" height="80px">
+                        <h4>APP Development</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus, perferendis? Fugit, iusto quasi. Dolor tempora
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="business.jpg" width="80px" height="80px">
+                        <h4>Business Strategy</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus, perferendis? Fugit, iusto quasi. Dolor tempora
+                        </p>
+                    </div>
+                </div>
+            </div>
+ <div class="experience">
+ <p class="one">
+     My Resume
+ </p>
+    <h2>10+ YEARS OF EXPERIENCE</h2>
+  <div class="section">
+    <div class="left">
+        <div class="dot"></div>
+      <h2>Education</h2>
+    </div>
+    <div class="section-card">
+      <div class="item">
+        <h3>BSc in Computer Science</h3>
+        <p>University of ULAV (2018 - 2022)</p>
+        <p>Something weird, something incomprehensible do not pay attention to it.</p>
+      </div>
+      <div class="item">
+        <h3>AS - Science & Information</h3>
+        <p>University of ULAV (2016 - 2018)</p>
+        <p>Something weird, something incomprehensible do not pay attention to it.</p>
+      </div>
+      <div class="item">
+        <h3>Secondary School Education</h3>
+        <p>Kindergarden (2006 - 2016)</p>
+        <p>Something weird, something incomprehensible do not pay attention to it. </p>
+      </div>
+    </div>
+  </div>
+  <br>
+ <div class="section">
+    <div class="left">
+      <div class="dot"></div>
+      <h2>Software Skills</h2>
+    </div>
+    <div class="section-card">
+      <div class="item">
+        <h3>UI/UX Design</h3>
+        <p>Figma ----------------------------------90%<br>Adobe XD -----------------------------85%<br>Photoshop -----------------------------80%</p>
+      </div>
+      <div class="item">
+        <h3>Web Developer</h3>
+        <p>WordPress -----------------------------90%<br>Mockplus ------------------------------85%<br>Weebly ---------------------------------80%</p>
+      </div>
+      <div class="item">
+        <h3>App Development</h3>
+        <p>Quixy ----------------------------------92%<br>AppyPie -------------------------------87%<br>iBuildApp -----------------------------82%</p>
+      </div>
+    </div>
+  </div>
+  <br>
+ <div class="section">
+    <div class="left">
+      <div class="dot"></div>
+      <h2>Experience</h2>
+    </div>
+    <div class="section-card">
+      <div class="item">
+        <h3>Web Developer & Trainer</h3>
+        <p>Brac Developer Team (2012 - 2016)</p>
+        <p>Something weird, something incomprehensible do not pay attention to it.</p>
+      </div>
+      <div class="item">
+        <h3>Front-end Developer</h3>
+        <p>Brane (2020 - 2021)</p>
+        <p>Something weird, something incomprehensible do not pay attention to it.</p>
+      </div>
+      <div class="item">
+        <h3>UI/UX Designer</h3>
+        <p>Google Out Tech (2017 - Present)</p>
+        <p>Something weird, something incomprehensible do not pay attention to it.</p>
+      </div>
+    </div>
+  </div>
+            </div>
+                <div class="feedbacks">
+               <div class="offer">
+                <p class="one">Testimonial</p>
+                <h2>CLIENT FEEDBACK</h2>
+                <div class="cards">
+                    <div class="card1">
+                        <div class="portfolioimg">
+                            <img src="profile1.jpg" class="rounded" width="80px" height="80px">
+                        </div>
+                        <div class="info">
+                            <h4>John K. Meraz</h4>
+                            <p class="client">CEO, XYZ Group</p>
+                            <p class="undertext">dgghg iuhuo pokji fgjt gjib
+                                bddyb njuyrtf mnlxdvvc nmfj
+                                bjgfdsv czhgujh jhgnlk.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatibus, perferendis? Fug
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="portfolioimg">
+                            <img src="profile2.jpg" class="rounded" width="80px" height="80px">
+                        </div>
+                        <div class="info">
+                            <h4>Johan Smith</h4>
+                            <p class="client">CEO, ABC Agency</p>
+                            <p class="undertext">dgghg iuhuo pokji fgjt gjib
+                                bddyb njuyrtf mnlxdvvc nmfj
+                                bjgfdsv czhgujh jhgnlk.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatibus, perferendis? Fug
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="portfolioimg">
+                            <img src="profile3.jpg" class="rounded" width="80px" height="80px">
+                        </div>
+                        <div class="info">
+                            <h4>Elithabet Brown</h4>
+                            <p class="client">Director Techno</p>
+                            <p class="undertext">dgghg iuhuo pokji fgjt gjib
+                                bddyb njuyrtf mnlxdvvc nmfj
+                                bjgfdsv czhgujh jhgnlk.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatibus, perferendis? Fug
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="visitportfolio">
+            <div class="offer">
+                <p class="one">My Portfolio</p>
+                <h2>VISIT MY PORTFOLIO</h2>
+                <div class="nav-head">
+                    <nav>
+                        <ul>
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">UX/UI Design</a></li>
+                            <li><a href="#">Branding Design</a></li>
+                            <li><a href="#">Graffic Design</a></li>
+                            <li><a href="#">APP Development</a></li>
+                            <li><a href="#">Web Design</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                </div>
+
+                <div class="gallery">
+                    <div class="img-1">
+                        <img src="img-1.jpg" width="430px" height="400px">
+                    </div>
+                    <div class="img-2">
+                        <img src="img-2.jpg" width="430px" height="400px">
+                    </div>
+                    <div class="img-3">
+                        <img src="img-3.jpg" width="430px" height="400px">
+                    </div>
+                    <div class="img-4">
+                        <img src="img-4.jpg" width="430px" height="400px">
+                    </div>
+                    <div class="img-5">
+                        <img src="img-5.jpg" width="430px" height="400px">
+                    </div>
+                    <div class="img-6">
+                        <img src="img-6.jpg" width="430px" height="400px">
+                    </div>
+                </div>
+                <div class="gallery2">
+                    <div class="img-7">
+                        <img src="img-7.jpg" width="430px" height="400px">
+                    </div>
+                    <div class="img-8">
+                        <img src="img-8.jpg" width="880px" height="400px">
+                    </div>
+                </div>
+            </div>
+            <div class="reputed">
+                <div class="offer">
+                    <p class="one">Partners</p>
+                    <h2>REPUTED PARTNER</h2>
+                </div>
+                <div class="reputed-img">
+                    <div class="p1">
+                        <img src="partner1.jpg" width="200px" height="100px">
+                    </div>
+                    <div class="p1">
+                        <img src="partner2.jpg" width="200px" height="100px">
+                    </div>
+                    <div class="p1">
+                        <img src="partner3.jpg" width="200px" height="100px">
+                    </div>
+                    <div class="p1">
+                        <img src="partner4.jpg" width="200px" height="100px">
+                    </div>
+                    <div class="p1">
+                        <img src="partner5.jpg" width="200px" height="100px">
+                    </div>
+                    <div class="p1">
+                        <img src="partner6.jpg" width="200px" height="100px">
+                    </div>
+                </div>
+            </div>
+            <div class="latestblog">
+             <div class="offer">
+                <p class="one">My Blog</p>
+                <h2>LATEST BLOG</h2>
+                <div class="latestcards">
+                    <div class="latestcard">
+                        <div class="imglate">
+                            <img src="img-one.jpg" class="latestimg"  width="430px" height="350px">
+                        </div>
+                        <div class="latest">
+                            <p class="client">22 January 2023</p>
+                            <h4>Become an UX/UI Designer With Career Foundry</h4>
+                           <div class="latest-link">
+                                <a href="">Read More→</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latestcard">
+                        <div class="imglate">
+                            <img src="img-two.jpg" class="latestimg" width="430px" height="350px">
+                        </div>
+                        <div class="latest">
+                            <p class="client">23 January 2023</p>
+                            <h4>The Best App Development For Your Business Plan</h4>
+                            <div class="latest-link">
+                                <a href="">Read More→</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latestcard">
+                        <div class="imglate">
+                            <img src="img-three.jpg" class="latestimg" width="430px" height="350px">
+                        </div>
+                        <div class="latest">
+                            <p class="client">13 January 2023</p>
+                            <h4>The Best Portfolio For Agency Design Thinking</h4>
+                            <div class="latest-link">
+                                <a href="">Read More→</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+                <div class="wanthear">
+        <div class="offer">
+            <p class="one">My Contact</p>
+            <h2>I WANT TO HEAR FROM YOU</h2>
+            <div class="contactcontainer">
+            <form>
+            <div class="contacts">
+                <input type="text"
+                placeholder="Your Name">
+                <input type="email"
+                placeholder="Your Email">
+                <input type="tel"
+                placeholder="Your Phone">
+                <input type="text"
+                placeholder="Subject">
+            </div>
+            <textarea placeholder="Message"></textarea>
+            <button class="btn">Send Me Message</button>
+            </form>
+            <div class="address">
+            <div class="addres">
+                <h3>📍Address</h3>
+                <div class="add">202 Dog Hill Lane Belait,KS 67420</div>
+                </div>
+            <div class="number">
+                <h3>📞 Phone </h3>
+                <div class="numb">1-800-915-6270</div>
+                <div class="email">
+                    <h3>Email</h3>
+                    <div class="mail">example@gmail.com</div>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </div>
+               </div>
+    </main>
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    <div class="logofoot">
+                        <img src="logo.jpg" width="250px" height="80px">
+                    </div>
+                    <p class="footwrite">
+                        Lorem ipsum dolor sit
+                        Nihil totam modi sed,
+                        amet consectetur adipisicing elit.
+                        Quisquam, quod.
+                        Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit.
+                        Quisquam, quod.
+
+                    </p>
+                    <div class="mail"><a href="example@gmail.com">example@gmail.com</a></div>
+                </div>
+                <div class="footer-links">
+                    <h3>Explore Link</h3>
+                    <nav class="nav-foot">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-links">
+                    <h3>My Services</h3>
+                    <nav class="nav-foot">
+                        <ul>
+                            <li><a href="#">UX/UI Design</a></li>
+                            <li><a href="#">Mobile App</a></li>
+                            <li><a href="#">Web Developer</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-links">
+                    <h3>Follow Me</h3>
+                    <a href="maps">📍202 Dog Hill Lane Belait,KS 67420</a><br>
+                    <a href="tel:18009156270">📞 1-800-915-6270</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copy">All right reserved © 2025</p>
+                <div class="rights">
+                    <a href="#">Terms & Condition</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
