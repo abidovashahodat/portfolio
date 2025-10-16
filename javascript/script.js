@@ -10,8 +10,41 @@ if (featureSwitcher) {
     Например: пользователь ввел первое число 10, второе число 20 и 
     знак умножения то результат должен быть 200
     */
-	const a = +prompt("Введите число 1");
-	const b = +prompt("Введите число 2");
+	const a = prompt("Введите число 1");
+	const b = prompt("Введите число 2");
 	const char = prompt("Введите операцию");
-	alert("Результат: " + (a + b));
+
+
+if( isNaN(a) || isNaN(b) || a === "" || b === ""){
+    alert("Ошибка! Введите число");
+}
+ else if (!["+", "-", "*", "/"].includes(char)) {
+		alert("Ошибка: допустимы только знаки +, -, *, /");
+	} else {
+		const num1 = parseFloat(a);
+		const num2 = parseFloat(b);
+		let result;
+
+        switch (char) {
+			case "+":
+				result = num1 + num2;
+				break;
+			case "-":
+				result = num1 - num2;
+				break;
+			case "*":
+				result = num1 * num2;
+				break;
+			case "/":
+				if (num2 === 0) {
+					alert("Ошибка: деление на ноль!");
+					return;
+				}
+				result = num1 / num2;
+				break;
+		}
+
+		alert(`Результат: ${result}`);
+	}
+
 }
