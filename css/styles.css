@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: serif;
+	font-family: Garamond, serif;
 }
 body {
 	margin: 0px;
@@ -14,8 +14,6 @@ body {
 	min-width: 1400px;
 }
 
-
-
 header {
 	display: flex;
 	justify-content: space-between;
@@ -28,7 +26,6 @@ header {
 	position: relative;
 	display: inline-block;
 	left: 20px;
-
 }
 
 .one::before {
@@ -71,13 +68,11 @@ header {
 	height: 50px;
 	width: 130px;
 	box-shadow: 5px 0 15px 0 black;
-
-
 }
- .btn:hover ,.contact:hover {
+.btn:hover,
+.contact:hover {
 	background-color: rgb(11, 23, 113);
 	transition: 0.5s ease;
-
 }
 
 .first {
@@ -103,7 +98,6 @@ header {
 
 .img-one {
 	width: 27.5%;
-	
 }
 
 .solution {
@@ -120,7 +114,8 @@ h1 {
 .under-write {
 	line-height: 30px;
 	width: 85%;
-	margin-top: -50px;}
+	margin-top: -50px;
+}
 
 .btn {
 	margin-top: 10px;
@@ -133,7 +128,6 @@ h1 {
 	width: 150px;
 	box-shadow: 5px 0 15px 0 black;
 }
-
 
 .about-me {
 	height: 1000px;
@@ -156,7 +150,6 @@ h1 {
 	justify-content: center;
 	gap: 10px;
 	padding-right: 200px;
-	
 }
 
 .achieve h3 {
@@ -167,8 +160,8 @@ h1 {
 .list-about {
 	display: flex;
 	justify-content: space-around;
-	margin-left: -110px;}
-	
+	margin-left: -110px;
+}
 
 .list-about nav ul li {
 	list-style: none;
@@ -280,10 +273,8 @@ h2 {
 	flex: 1;
 }
 
-
 .item p {
 	color: #555;
-	
 }
 
 .logo {
@@ -295,17 +286,22 @@ h2 {
 	grid-area: img1;
 }
 
-.img-1:hover ,.img-2:hover ,.img-3:hover ,.img-4:hover ,.img-5:hover ,.img-6:hover ,.img-7:hover ,.img-8:hover {
+.img-1:hover,
+.img-2:hover,
+.img-3:hover,
+.img-4:hover,
+.img-5:hover,
+.img-6:hover,
+.img-7:hover,
+.img-8:hover {
 	opacity: 0.8;
 	transform: translateY(-5px) scale(1.03);
 	transition: 0.5s ease;
 }
 
-
 .img-2 {
 	grid-area: img2;
 }
-
 
 .img-3 {
 	grid-area: img3;
@@ -315,7 +311,6 @@ h2 {
 	grid-area: img4;
 }
 
-
 .img-5 {
 	grid-area: img5;
 }
@@ -324,16 +319,13 @@ h2 {
 	grid-area: img6;
 }
 
-
 .img-7 {
 	grid-area: img-7;
 }
 
-
 .img-8 {
 	grid-area: img-8;
 }
-
 
 .gallery {
 	width: 1000px;
@@ -404,8 +396,8 @@ h2 {
 .p1:hover {
 	box-shadow: 0 10px 10px 0 gray;
 	transform: translateY(-5px) scale(1.03);
-	cursor: pointer;}
-
+	cursor: pointer;
+}
 
 .latestcard a {
 	text-decoration: none;
@@ -464,10 +456,8 @@ h2 {
 }
 
 form {
-	flex: 1
+	flex: 1;
 }
-
-
 
 .address h3,
 .numb,
@@ -480,11 +470,11 @@ form {
 	transition: 0.5s ease;
 }
 
-.numb:hover ,.add:hover ,.mail:hover {
+.numb:hover,
+.add:hover,
+.mail:hover {
 	color: rgb(23, 132, 205);
 }
-
-
 
 .contacts {
 	display: grid;
@@ -502,12 +492,13 @@ textarea {
 	height: 70px;
 	margin-left: -55px;
 }
-input::placeholder{
+input::placeholder {
 	padding-left: 10px;
 }
-textarea::placeholder{
+textarea::placeholder {
 	padding-left: 10px;
-	padding-top: 10px;}
+	padding-top: 10px;
+}
 
 form button {
 	margin-left: -55px;
@@ -557,7 +548,6 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	
 }
 
 .footer-links a {
@@ -567,7 +557,7 @@ footer {
 	line-height: 30px;
 }
 
-.follow-me{
+.follow-me {
 	margin-top: -70px;
 }
 

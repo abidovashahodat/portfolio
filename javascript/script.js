@@ -1,4 +1,12 @@
-const featureSwitcher = true;
+function setYear() {
+	const year = document.getElementById("year");
+	year.innerHTML = new Date().getFullYear();
+}
+
+setYear();
+
+// Calculator
+const featureSwitcher = false;
 
 if (featureSwitcher) {
 	// TODO
@@ -10,41 +18,41 @@ if (featureSwitcher) {
     Например: пользователь ввел первое число 10, второе число 20 и 
     знак умножения то результат должен быть 200
     */
-	const a = prompt("Введите число 1");
-	const b = prompt("Введите число 2");
-	const char = prompt("Введите операцию");
+	const a = +prompt("Введите  1 число");
+	const b = +prompt("Введите  2 число");
+	const c = prompt("Введите операцию");
 
-
-if( isNaN(a) || isNaN(b) || a === "" || b === ""){
-    alert("Ошибка! Введите число");
-}
- else if (!["+", "-", "*", "/"].includes(char)) {
-		alert("Ошибка: допустимы только знаки +, -, *, /");
-	} else {
-		const num1 = parseFloat(a);
-		const num2 = parseFloat(b);
+	function show(text, hasPrefix = false) {
 		let result;
-
-        switch (char) {
-			case "+":
-				result = num1 + num2;
-				break;
-			case "-":
-				result = num1 - num2;
-				break;
-			case "*":
-				result = num1 * num2;
-				break;
-			case "/":
-				if (num2 === 0) {
-					alert("Ошибка: деление на ноль!");
-					return;
-				}
-				result = num1 / num2;
-				break;
+		if (hasPrefix) {
+			result = "Ответ = " + text;
+		} else {
+			result = text;
 		}
-
-		alert(`Результат: ${result}`);
+		console.log(result);
+		alert(result);
 	}
 
+	if (isNaN(a) || isNaN(b)) {
+		show("это не число");
+	} else if (c !== "+" && c !== "-" && c !== "*" && c !== "/") {
+		show("не поддерживаемая  операция ");
+	}
+	switch (c) {
+		case "+":
+			show(a + b, true);
+			break;
+		case "-":
+			show(a - b, true);
+			break;
+		case "*":
+			show(a * b, true);
+			break;
+		case "/":
+			show(a / b, true);
+			break;
+		default:
+			show("Используйте допустимые символы");
+			break;
+	}
 }
