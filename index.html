@@ -4,6 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio Website</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 
@@ -18,27 +25,45 @@
 						height="80"
 					/>
 				</div>
-				<div class="burger">
+				<button class="burger" id="burger-btn">
 					<img
 						src="./images/burger.png"
 						alt="burger"
 						width="30"
 						height="30"
 					/>
-				</div>
+				</button>
 
 				<nav class="nav-head">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Resume</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Testimonial</a></li>
+						<li class="nav-item"><a href="#">Home</a></li>
+						<li class="nav-item"><a href="#">About</a></li>
+						<li class="nav-item"><a href="#">Services</a></li>
+						<li class="nav-item"><a href="#">Portfolio</a></li>
+						<li class="nav-item"><a href="#">Resume</a></li>
+						<li class="nav-item"><a href="#">Blog</a></li>
+						<li class="nav-item"><a href="#">Testimonial</a></li>
 					</ul>
 				</nav>
-				<button class="contact">Contact Us</button>
+				<nav class="mobile-menu" id="mobile-menu">
+					<img
+						src="./images/logo.jpg"
+						alt="логотип"
+						width="120"
+						height="40"
+					/>
+					<button class="close-btn" id="close-btn">X</button>
+					<ul>
+						<li class="nav-item"><a href="#">Home</a></li>
+						<li class="nav-item"><a href="#">About</a></li>
+						<li class="nav-item"><a href="#">Services</a></li>
+						<li class="nav-item"><a href="#">Portfolio</a></li>
+						<li class="nav-item"><a href="#">Resume</a></li>
+						<li class="nav-item"><a href="#">Blog</a></li>
+						<li class="nav-item"><a href="#">Testimonial</a></li>
+					</ul>
+				</nav>
+				<button class="btn">Contact Us</button>
 			</header>
 			<main>
 				<div class="first-bg">
@@ -749,6 +774,6 @@
 				</div>
 			</footer>
 		</div>
-		<script src="./javascript/script.js"></script>
+		<script src="./js/script.js"></script>
 	</body>
 </html>

@@ -56,3 +56,17 @@ if (featureSwitcher) {
 			break;
 	}
 }
+
+const burgerBtn = document.getElementById("burger-btn");
+const closeBtn = document.getElementById("close-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+burgerBtn.addEventListener("click", function () {
+	mobileMenu.style.transform = "translateX(0)";
+});
+
+closeBtn.addEventListener("click", function () {
+	mobileMenu.style.transform = "translateX(-100%)";
+});
+
+document.addEventListener("click", function () {});
