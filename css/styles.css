@@ -629,3 +629,38 @@ footer {
 .logofoot {
 	margin-top: -60px;
 }
+.burger{
+	display: none;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	body{
+		overflow-x: hidden;
+	}
+	  .container {
+		max-width: 767px;
+		min-width: 100%;
+	  }
+       
+	
+		.nav-head ul a, .contact{
+			display: none;
+      }
+
+	  .burger{
+		display: block;
+		cursor: pointer;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex: 1;
+	  }
+
+	  .img-one{
+		display: none;
+	  }
+	  
+	 
+}
