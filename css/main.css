@@ -7,8 +7,7 @@
 	font-size: 20pt;
 }
 
-.btn:hover,
-.contact:hover {
+.btn:hover {
 	background-color: rgb(11, 23, 113);
 	transform: scale(1.05);
 }
@@ -64,7 +63,7 @@ h1 {
 	height: 50px;
 	width: 180px;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-	transition: background-color 0.5s ease;
+	transition: all 0.5s ease;
 	font-size: 20px;
 }
 
@@ -550,8 +549,4 @@ footer {
 	display: none;
 }
 
-@media only screen and (max-width: 767px) {
-	.img-one {
-		display: none;
-	}
-}
+

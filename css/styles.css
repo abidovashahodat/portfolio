@@ -9,7 +9,7 @@
 
 * {
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: 'Transcity', Times, serif;
 }
 body {
 	margin: 0px;
@@ -34,8 +34,7 @@ header {
 
 .nav-item a:hover {
 	cursor: pointer;
-	color: rgb(23, 132, 205);
-}
+	color: var(--primary);}
 
 .nav-item {
 	text-decoration: none;
@@ -44,10 +43,98 @@ header {
 .nav-item a {
 	transition: all 0.3s ease;
 	color: black;
+	position: relative;
+	text-decoration: none;
+}
+.nav-item a:hover::before{
+	content: "";
+	width: 40px;
+	height: 3px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50% ,0 );
+	background-color: var(--primary);
 }
 
+
+
+
+.one {
+	position: relative;
+	display: inline-block;
+	left: 20px;
+}
+
+.one::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-image: url(../images/Component\ 1.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: -20px;
+	bottom: 3px;
+}
+
+
+.burger{
+	display: none;
+}
+
+.mobile-menu{
+	display: none;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+	.container {
+		min-width: auto;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.nav-head a{
+		display: none;
+
+	}
+	.burger {
+	display: block;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	transition: all 0.2s ease-in-out;
+}
+    .burger:hover {
+	transform: scale(1.1);
+}
+   .close-btn {
+	padding: 10px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 25px;
+	transition: all 0.2s ease-in-out;
+	/* top: 0; */
+}
+    .close-btn:hover {
+	transform: scale(1.1);
+}
 .mobile-menu {
 	/* display: none; */
+	display: block;
 	transform: translateX(-100%);
 	background-color: white;
 	height: 100vh;
@@ -70,62 +157,7 @@ header {
 	color: black;
 }
 
-.close-btn {
-	padding: 10px;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	position: absolute;
-	right: 25px;
-	/* top: 0; */
-}
-.close-btn:hover {
-	background-color: azure;
-}
 
-.one {
-	position: relative;
-	display: inline-block;
-	left: 20px;
-}
+	  }
+	
 
-.one::before {
-	content: "";
-	width: 15px;
-	height: 15px;
-	background-image: url(../images/Component\ 1.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	position: absolute;
-	left: -20px;
-	bottom: 3px;
-}
-
-.burger {
-	display: block;
-	cursor: pointer;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	flex: 1;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-}
-
-@media only screen and (max-width: 1440px) {
-	.container {
-		min-width: auto;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	body {
-		overflow-x: hidden;
-	}
-
-	.nav-head ul a,
-	.contact {
-		display: none;
-	}
-}
