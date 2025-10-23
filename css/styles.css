@@ -9,7 +9,7 @@
 
 * {
 	box-sizing: border-box;
-	font-family: 'Transcity', Times, serif;
+	font-family: "Transcity", Times, serif;
 }
 body {
 	margin: 0px;
@@ -19,7 +19,8 @@ body {
 
 .container {
 	margin: 0 auto;
-	max-width: 1450px;
+	padding: 0 25px;
+	max-width: 1440px;
 	min-width: 1400px;
 }
 
@@ -32,10 +33,6 @@ header {
 	background-color: white;
 }
 
-.nav-item a:hover {
-	cursor: pointer;
-	color: var(--primary);}
-
 .nav-item {
 	text-decoration: none;
 	font-weight: bold;
@@ -46,7 +43,12 @@ header {
 	position: relative;
 	text-decoration: none;
 }
-.nav-item a:hover::before{
+.nav-item a:hover {
+	cursor: pointer;
+	color: var(--primary);
+}
+.nav-item a::before {
+	transition: all 0.3s;
 	content: "";
 	width: 40px;
 	height: 3px;
@@ -54,12 +56,14 @@ header {
 	bottom: -5px;
 	left: 50%;
 	right: 50%;
-	transform: translate(-50% ,0 );
+	transform: translate(-50%, 0);
 	background-color: var(--primary);
+	opacity: 0;
 }
 
-
-
+.nav-item a:hover::before {
+	opacity: 1;
+}
 
 .one {
 	position: relative;
@@ -79,20 +83,20 @@ header {
 	bottom: 3px;
 }
 
+footer {
+	background-color: black;
+	color: white;
+	height: 500px;
+	padding: 40px 0;
+}
 
-.burger{
+.burger {
 	display: none;
 }
 
-.mobile-menu{
+.mobile-menu {
 	display: none;
 }
-
-
-
-
-
-
 
 @media only screen and (max-width: 1440px) {
 	.container {
@@ -105,114 +109,54 @@ header {
 		overflow-x: hidden;
 	}
 
-	.nav-head a{
+	.nav-head a {
 		display: none;
-
 	}
 	.burger {
-	display: block;
-	cursor: pointer;
-	border: none;
-	background-color: transparent;
-	transition: all 0.2s ease-in-out;
+		display: block;
+		cursor: pointer;
+		border: none;
+		background-color: transparent;
+		transition: all 0.2s ease-in-out;
+	}
+	.burger:hover {
+		transform: scale(1.1);
+	}
+	.close-btn {
+		padding: 10px;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		position: absolute;
+		right: 25px;
+		transition: all 0.2s ease-in-out;
+		/* top: 0; */
+	}
+	.close-btn:hover {
+		transform: scale(1.1);
+	}
+	.mobile-menu {
+		/* display: none; */
+		display: block;
+		transform: translateX(-100%);
+		background-color: white;
+		height: 100%;
+		width: 300px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		padding: 25px;
+		transition: all 0.2s ease-in-out;
+	}
+	.mobile-menu ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 0;
+	}
+	.mobile-menu ul a {
+		color: black;
+	}
 }
-    .burger:hover {
-	transform: scale(1.1);
-}
-   .close-btn {
-	padding: 10px;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	position: absolute;
-	right: 25px;
-	transition: all 0.2s ease-in-out;
-	/* top: 0; */
-}
-    .close-btn:hover {
-	transform: scale(1.1);
-}
-.mobile-menu {
-	/* display: none; */
-	display: block;
-	transform: translateX(-100%);
-	background-color: white;
-	height: 100vh;
-	width: 300px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	padding: 25px;
-	transition: all 0.2s ease-in-out;
-}
-.mobile-menu ul {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	padding: 0;
-}
-.mobile-menu ul a {
-	color: black;
-}
-
-
-	  }
-	/* Курс валют */
-.currency-module {
-	width: 100%;
-	max-width: 400px;
-	background-color: #FFFFFF;
-	border-radius: 12px;
-	box-shadow:  0 4px 12px rgba(0, 0, 0, 0.05);
-	padding: 24px;
-	box-sizing: border-box;
-}
-
-.currency-module h2 {
-	font-size: 20px;
-	font-weight: 600;
-	color: #1a202c;
-	margin-top: 0;
-	margin-bottom: 20px;
-	text-align: left;
-}
-
-.rates-table {
-	width: 100%;
-	border-collapse: collapse;
-}
-
-.rates-table th,
-.rates-table td {
-	padding: 14px 10px;
-	text-align: left;
-	font-size: 14px;
-	border-bottom: 1px solid #edf2f7;
-}
-.rates-table th {
-	font-weight: 600;
-	color: #718096;
-	text-transform: uppercase;
-	font-size: 12px;
-}
-.rates-table td {
-	
-	font-weight: 500;
-}
-
-.rates-table th:nth-child(2),
-.rates-table td:nth-child(2),
-.rates-table th:nth-child(3),
-.rates-table td:nth-child(3) {
-	text-align: right;
-}
-.rates-table tbody tr:last-child td {
-	border-bottom: none;
-}
-.currency-icon {
-	vertical-align: middle;
-	margin-right: 8px;
-}
-

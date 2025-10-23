@@ -1,14 +1,30 @@
-function setYear() {
+// Function
+(function setYear() {
 	const year = document.getElementById("year");
 	year.innerHTML = new Date().getFullYear();
-}
-
-setYear();
+})();
 
 // Calculator
 const featureSwitcher = false;
 
 if (featureSwitcher) {
+}
+
+const burgerBtn = document.getElementById("burger-btn");
+const closeBtn = document.getElementById("close-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+burgerBtn.addEventListener("click", () => {
+	mobileMenu.style.transform = "translateX(0)";
+});
+
+closeBtn.addEventListener("click", () => {
+	mobileMenu.style.transform = "translateX(-100%)";
+});
+
+document.addEventListener("click", function () {});
+
+function calc() {
 	// TODO
 	/* Нужно написать код для калькулятора, который будет проверять 
     значения первого числа на число, значение второго числа на число 
@@ -57,16 +73,13 @@ if (featureSwitcher) {
 	}
 }
 
-const burgerBtn = document.getElementById("burger-btn");
-const closeBtn = document.getElementById("close-btn");
-const mobileMenu = document.getElementById("mobile-menu");
+function returningFunction(a, b) {
+	console.log("Hello world");
+	let result;
+	if (true) {
+		//blablabla
+		result = a + b;
+	}
 
-burgerBtn.addEventListener("click", function () {
-	mobileMenu.style.transform = "translateX(0)";
-});
-
-closeBtn.addEventListener("click", function () {
-	mobileMenu.style.transform = "translateX(-100%)";
-});
-
-document.addEventListener("click", function () {});
+	return "privet";
+}
