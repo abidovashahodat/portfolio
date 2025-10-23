@@ -33,10 +33,6 @@
 	width: 73.5%;
 }
 
-.img-one {
-	width: 27.5%;
-}
-
 .solution {
 	color: rgb(17, 64, 235);
 }
@@ -118,11 +114,10 @@ h1 {
 }
 
 .offer-cards {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+	gap: 30px;
 	padding: 35px;
 }
 
@@ -134,7 +129,7 @@ h1 {
 	padding: 20px;
 	box-shadow: 5px 0 15px 0 gray;
 	border-radius: 10px;
-	width: 340px;
+	width: 300px;
 	height: 330px;
 	transition: background-color 0.3s ease, transform 0.3s ease;
 	cursor: pointer;
@@ -467,13 +462,6 @@ textarea {
 	font-size: 20px;
 }
 
-footer {
-	background-color: black;
-	color: white;
-	height: 500px;
-	padding: 40px;
-}
-
 .footwrite {
 	font-size: 20px;
 	line-height: 20px;
@@ -548,5 +536,3 @@ footer {
 .burger {
 	display: none;
 }
-
-
