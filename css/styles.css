@@ -30,11 +30,14 @@ main {
 header {
 	top: 0;
 	position: fixed;
+	background-color: rgb(235, 244, 254);
+}
+
+.header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 100px;
-	background-color: rgb(235, 244, 254);
 	width: 100%;
 	z-index: 10;
 }
