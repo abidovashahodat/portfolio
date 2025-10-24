@@ -12,9 +12,12 @@
 	font-family: "Transcity", Times, serif;
 }
 body {
-	margin: 0px;
+	margin: 0;
 	height: 100vh;
 	overflow-x: hidden;
+}
+main {
+	margin-top: 100px;
 }
 
 .container {
@@ -25,12 +28,15 @@ body {
 }
 
 header {
-	position: relative;
+	top: 0;
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 130px;
-	background-color: white;
+	height: 100px;
+	background-color: rgb(235, 244, 254);
+	width: 100%;
+	z-index: 10;
 }
 
 .nav-item {
