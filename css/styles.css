@@ -9,7 +9,8 @@
 
 * {
 	box-sizing: border-box;
-	font-family: "Transcity", Times, serif;
+	font-family: 'open-sans', sans-serif;
+    font-weight: 500; 
 }
 
 body {
@@ -23,7 +24,7 @@ main {
 }
 
 .container {
-	margin: 0 auto;
+	margin:0 auto;
 	padding: 0 25px;
 	max-width: 1440px;
 	min-width: 1400px;
@@ -43,8 +44,11 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	height: 100px;
+	background-color: rgb(255, 255, 255);
 	width: 100%;
 	z-index: 10;
+	left: 0;
+	right: 0;
 }
 
 .nav-item {
@@ -142,12 +146,12 @@ footer {
 	}
 
 	.close-btn {
-		padding: 10px;
 		background-color: transparent;
 		border: none;
 		cursor: pointer;
 		position: absolute;
 		right: 25px;
+		top: 25px;
 		transition: all 0.2s ease-in-out;
 		/* top: 0; */
 	}
@@ -160,14 +164,13 @@ footer {
 		/* display: none; */
 		display: block;
 		transform: translateX(-100%);
-		background-color: white;
+		background-color: rgb(28, 30, 44);
 		height: 100%;
 		width: 300px;
 		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 10;
-		padding: 25px;
 		transition: all 0.2s ease-in-out;
 	}
 
@@ -176,12 +179,40 @@ footer {
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
-		padding: 0;
+		padding: 25px;
+		
+	}
+
+	.mobile-menu ul li {
+		border-bottom: 1px solid white;
 	}
 
 	.mobile-menu ul a {
-		color: black;
+		color: white;
+		line-height: 40px;
+		transition: all 0.3s ease;
+		
 	}
+	.mobile-menu ul a:hover {
+		color: var(--primary);
+	}
+	.mobile-menu .btn{
+		margin: 25px;
+		width: 250px;
+	}
+
+	.mobile-head{
+		background-color: rgb(202, 215, 241);
+		width: 300px;
+		padding: 0px;
+		margin: 0px;
+		height :100px;}
+
+		.mobile-head img{
+			margin: 25px;
+			z-index: 11;}
+
+}
 
 	footer {
 		width: 100vw;
