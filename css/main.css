@@ -45,12 +45,10 @@ html {
 h1 {
 	font-size: 115px;
 	margin-top: 5px;
-	line-height: 110px;
 	width: 90%;
 }
 
 .under-write {
-	line-height: 30px;
 	width: 85%;
 	margin-top: -50px;
 }
@@ -103,7 +101,6 @@ h1 {
 
 .list-about nav ul li {
 	list-style: none;
-	line-height: 50px;
 }
 
 .about-content {
@@ -146,7 +143,6 @@ h1 {
 
 h2 {
 	font-size: 60px;
-	line-height: 50px;
 	margin-top: 2px;
 }
 
@@ -399,7 +395,6 @@ h2 {
 }
 
 .undertext {
-	line-height: 25px;
 	text-align: left;
 }
 
@@ -478,13 +473,7 @@ textarea {
 
 .footwrite {
 	font-size: 20px;
-	line-height: 20px;
 	padding-top: 10px;
-}
-
-.mail {
-	font-size: 30px;
-	padding-top: -10px;
 }
 
 .mail a {
@@ -504,11 +493,14 @@ textarea {
 	gap: 10px;
 }
 
+.footer-links ul {
+	padding: 0;
+	margin-top: 0;
+}
+
 .footer-links a {
 	text-decoration: none;
 	color: white;
-	margin-left: -30px;
-	line-height: 30px;
 	transition: color 0.3s ease, opacity 0.3s ease;
 }
 

@@ -84,7 +84,6 @@ header {
 
 .one {
 	position: relative;
-	display: inline-block;
 	left: 20px;
 }
 
@@ -193,7 +192,6 @@ footer {
 	.footer-content {
 		flex-direction: column;
 		align-items: flex-start;
-		gap: 210px;
 	}
 
 	/* 
@@ -212,7 +210,6 @@ footer {
 		margin-bottom: 10px;
 	}
 
-
 	.follow-me {
 		margin-top: 0;
 		width: 100%;
@@ -220,20 +217,16 @@ footer {
 	}
 
 	.footer-bottom {
-		display: inline;
-		flex-direction: column;
 		margin-top: 50px;
 	}
 
-	c .rights {
+	.rights {
 		flex-direction: column;
 		gap: 10px;
 	}
 
 	.logofoot {
 		margin-top: 0;
-		order: -1;
-		width: 100%;
 		text-align: center;
 	}
 }
