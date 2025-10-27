@@ -36,7 +36,7 @@ header {
 	width: 100%;
 	z-index: 100;
 	position: fixed;
-	background-color: rgb(235, 244, 254);
+	background-color: rgb(255, 255, 255);
 }
 
 .header {
@@ -44,7 +44,6 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	height: 100px;
-	background-color: rgb(255, 255, 255);
 	width: 100%;
 	z-index: 10;
 	left: 0;
