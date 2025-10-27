@@ -12,12 +12,13 @@
 	font-family: 'open-sans', sans-serif;
     font-weight: 500; 
 }
-	
+
 body {
 	margin: 0;
 	height: 100vh;
 	overflow-x: hidden;
 }
+
 main {
 	margin-top: 100px;
 }
@@ -31,7 +32,14 @@ main {
 
 header {
 	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
 	position: fixed;
+	background-color: rgb(235, 244, 254);
+}
+
+.header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -47,16 +55,19 @@ header {
 	text-decoration: none;
 	font-weight: bold;
 }
+
 .nav-item a {
 	transition: all 0.3s ease;
 	color: black;
 	position: relative;
 	text-decoration: none;
 }
+
 .nav-item a:hover {
 	cursor: pointer;
 	color: var(--primary);
 }
+
 .nav-item a::before {
 	transition: all 0.3s;
 	content: "";
@@ -77,7 +88,6 @@ header {
 
 .one {
 	position: relative;
-	display: inline-block;
 	left: 20px;
 }
 
@@ -122,6 +132,7 @@ footer {
 	.nav-head a {
 		display: none;
 	}
+
 	.burger {
 		display: block;
 		cursor: pointer;
@@ -129,9 +140,11 @@ footer {
 		background-color: transparent;
 		transition: all 0.2s ease-in-out;
 	}
+
 	.burger:hover {
 		transform: scale(1.1);
 	}
+
 	.close-btn {
 		background-color: transparent;
 		border: none;
@@ -142,9 +155,11 @@ footer {
 		transition: all 0.2s ease-in-out;
 		/* top: 0; */
 	}
+
 	.close-btn:hover {
 		transform: scale(1.1);
 	}
+
 	.mobile-menu {
 		/* display: none; */
 		display: block;
@@ -158,6 +173,7 @@ footer {
 		z-index: 10;
 		transition: all 0.2s ease-in-out;
 	}
+
 	.mobile-menu ul {
 		list-style: none;
 		display: flex;
@@ -170,6 +186,7 @@ footer {
 	.mobile-menu ul li {
 		border-bottom: 1px solid white;
 	}
+
 	.mobile-menu ul a {
 		color: white;
 		line-height: 40px;
@@ -195,4 +212,59 @@ footer {
 			margin: 25px;
 			z-index: 11;}
 
+}
+
+	footer {
+		width: 100vw;
+		height: auto;
+		padding: 20px;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/* 
+	.footer-links {
+		display: flex;
+		gap: 40px;
+		flex-wrap: wrap;
+	} */
+
+	.footer-links nav {
+		flex: 1;
+		min-width: 100px;
+	}
+
+	.footer-links nav ul li {
+		margin-bottom: 10px;
+	}
+
+	.follow-me {
+		margin-top: 0;
+		width: 100%;
+		order: 3;
+	}
+
+	.footer-bottom {
+		margin-top: 50px;
+	}
+
+	.rights {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.logofoot {
+		margin-top: 0;
+		text-align: center;
+	}
+}
+
+.btn {
+	text-decoration: none;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 13px;
 }

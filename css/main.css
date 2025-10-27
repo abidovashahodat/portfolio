@@ -9,7 +9,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 .btn:hover ,.btn-contact:hover {
@@ -46,12 +46,10 @@ html {
 h1 {
 	font-size: 115px;
 	margin-top: 5px;
-	line-height: 110px;
 	width: 90%;
 }
 
 .under-write {
-	line-height: 30px;
 	width: 85%;
 	margin-top: -50px;
 }
@@ -112,7 +110,6 @@ h1 {
 
 .list-about nav ul li {
 	list-style: none;
-	line-height: 50px;
 }
 
 .about-content {
@@ -154,16 +151,18 @@ h1 {
 
 h2 {
 	font-size: 60px;
-	line-height: 50px;
 	margin-top: 2px;
 }
+
 .experience {
 	height: 900px;
 	text-align: center;
 }
+
 .experience-bg {
 	background-color: #bcd9f7;
 }
+
 .section {
 	display: flex;
 	align-items: center;
@@ -196,6 +195,7 @@ h2 {
 	position: absolute;
 	left: 4px;
 }
+
 .section h2 {
 	font-size: 20px;
 	margin-top: 19px;
@@ -214,6 +214,7 @@ h2 {
 	width: 1500px;
 	margin-top: 15px;
 }
+
 .item {
 	flex: 1;
 }
@@ -352,6 +353,7 @@ h2 {
 	border: 0.5px solid rgb(239, 239, 239);
 	transition: 0.5s ease-in-out;
 }
+
 .p1:hover {
 	box-shadow: 0px 10px 10px 4px gray;
 	transform: translateY(-5px) scale(1.03);
@@ -412,8 +414,7 @@ h2 {
 	margin-top: -10px;
 }
 
-.under-text {
-	line-height: 25px;
+.undertext {
 	text-align: left;
 	margin-left: 15px;
 }
@@ -467,10 +468,12 @@ textarea {
 	height: 70px;
 	
 }
+
 input::placeholder {
 	padding-left: 10px;
 	font-size: 20px;
 }
+
 textarea::placeholder {
 	padding-left: 10px;
 	padding-top: 10px;
@@ -496,18 +499,7 @@ textarea {
 
 .footwrite {
 	font-size: 20px;
-	line-height: 20px;
 	padding-top: 10px;
-}
-
-.mail {
-	font-size: 20px;
-	padding-top: -10px;
-	transition: all 0.3s ease;
-}
-
-.mail:hover {
-	color: var(--primary);
 }
 
 .mail a {
@@ -531,12 +523,17 @@ textarea {
 	gap: 10px;
 }
 
+.footer-links ul {
+	padding: 0;
+	margin-top: 0;
+}
+
 .footer-links a {
 	text-decoration: none;
 	color: white;
-	line-height: 30px;
 	transition: color 0.3s ease, opacity 0.3s ease;
 }
+
 .footer-links a:hover {
 	color: rgb(23, 132, 205);
 	opacity: 0.5;
@@ -586,6 +583,7 @@ textarea {
 .logofoot {
 	margin-top: -60px;
 }
+
 .burger {
 	display: none;
 }
