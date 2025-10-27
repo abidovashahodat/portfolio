@@ -8,7 +8,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 .btn:hover {
@@ -149,13 +149,16 @@ h2 {
 	line-height: 50px;
 	margin-top: 2px;
 }
+
 .experience {
 	height: 900px;
 	text-align: center;
 }
+
 .experience-bg {
 	background-color: #bcd9f7;
 }
+
 .section {
 	display: flex;
 	align-items: center;
@@ -188,6 +191,7 @@ h2 {
 	position: absolute;
 	left: 4px;
 }
+
 .section h2 {
 	font-size: 20px;
 	margin-top: 19px;
@@ -206,6 +210,7 @@ h2 {
 	width: 1500px;
 	margin-top: 15px;
 }
+
 .item {
 	flex: 1;
 }
@@ -339,6 +344,7 @@ h2 {
 	border: 1px solid rgb(186, 180, 180);
 	transition: 0.5s ease-in-out;
 }
+
 .p1:hover {
 	box-shadow: 0 10px 10px 0 gray;
 	transform: translateY(-5px) scale(1.03);
@@ -350,6 +356,7 @@ h2 {
 	color: rgb(91, 135, 216);
 	transition: all 0.3s ease;
 }
+
 .latestcard a:hover {
 	color: rgb(7, 60, 96);
 }
@@ -442,9 +449,11 @@ textarea {
 	height: 70px;
 	margin-left: -55px;
 }
+
 input::placeholder {
 	padding-left: 10px;
 }
+
 textarea::placeholder {
 	padding-left: 10px;
 	padding-top: 10px;
@@ -502,6 +511,7 @@ textarea {
 	line-height: 30px;
 	transition: color 0.3s ease, opacity 0.3s ease;
 }
+
 .footer-links a:hover {
 	color: rgb(23, 132, 205);
 	opacity: 0.5;
@@ -538,6 +548,7 @@ textarea {
 .logofoot {
 	margin-top: -60px;
 }
+
 .burger {
 	display: none;
 }
