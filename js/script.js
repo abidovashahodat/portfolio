@@ -24,6 +24,13 @@ closeBtn.addEventListener("click", () => {
 
 document.addEventListener("click", function () {});
 
+const button = document.querySelector('.btn-contact');
+
+  button.addEventListener('click', () => {
+    const target = document.querySelector('#btn');
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+
 function calc() {
 	// TODO
 	/* Нужно написать код для калькулятора, который будет проверять 

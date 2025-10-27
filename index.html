@@ -15,15 +15,16 @@
 	</head>
 
 	<body>
-		<div>
 			<header class="container">
 				<div class="head">
+					<a href="#Home">
 					<img
 						src="./images/logo.jpg"
 						alt="логотип"
 						width="250"
 						height="80"
 					/>
+					</a>
 				</div>
 				<button class="burger" id="burger-btn">
 					<img
@@ -47,6 +48,7 @@
 					</ul>
 				</nav>
 				<nav class="mobile-menu" id="mobile-menu">
+					<div class="mobile-head">
 					<img
 						src="./images/logo.jpg"
 						alt="логотип"
@@ -72,17 +74,19 @@
 							/>
 						</svg>
 					</button>
+					</div>
 					<ul>
-						<li class="nav-item"><a href="#Home">Home</a></li>
-						<li class="nav-item"><a href="#About">About</a></li>
-						<li class="nav-item"><a href="#Services">Services</a></li>
-						<li class="nav-item"><a href="#Portfolio">Portfolio</a></li>
-						<li class="nav-item"><a href="#Resume">Resume</a></li>
-						<li class="nav-item"><a href="#Blog">Blog</a></li>
-						<li class="nav-item"><a href="#Testimonial">Testimonial</a></li>
+						<li class="nav-item"><a href="#Home">HOME</a></li>
+						<li class="nav-item"><a href="#About">ABOUT</a></li>
+						<li class="nav-item"><a href="#Services">SERVICES</a></li>
+						<li class="nav-item"><a href="#Portfolio">PORTFOLIO</a></li>
+						<li class="nav-item"><a href="#Resume">RESUME</a></li>
+						<li class="nav-item"><a href="#Blog">BLOG</a></li>
+						<li class="nav-item"><a href="#Testimonial">TESTIMONIAL</a></li>
 					</ul>
+					<button class="btn">Contact Us</button>
 				</nav>
-				<button class="btn">Contact Us</button>
+				<button class="btn-contact">Contact Us</button>
 			</header>
 			<main>
 				<div class="first-bg" id="Home">
@@ -118,7 +122,7 @@
 				<div class="about-me container" id="About">
 					<div class="about-img">
 						<img
-							src="./images/about.jpg"
+							src="./images/about-me.jpg"
 							alt="обо мне"
 							width="600"
 							height="800"
@@ -126,8 +130,8 @@
 					</div>
 					<div class="about-content">
 						<p class="one">About Me</p>
-						<h2>From Idea to Code - I'll Make It Work</h2>
-						<p>
+						<h2 class="h2">From Idea to Code - I'll Make It Work</h2>
+						<p class="under-write-about">
 							Lorem ipsum dolor sit amet consectetur adipisicing
 							elit. Voluptatibus, perferendis? Fugit, iusto quasi.
 							Dolor tempora exercitationem pariatur nesciunt, enim
@@ -397,8 +401,8 @@
 					<p class="one">Testimonial</p>
 					<h2>CLIENT FEEDBACK</h2>
 					<div class="cards">
-						<div class="card1">
-							<div class="portfolioimg">
+						<div class="card-feedback">
+							<div class="portfolio-img">
 								<img
 									src="./images/profile1.jpg"
 									alt="обратная связь"
@@ -410,7 +414,7 @@
 							<div class="info">
 								<h4>John K. Meraz</h4>
 								<p class="client">CEO, XYZ Group</p>
-								<p class="undertext">
+								<p class="under-text">
 									dgghg iuhuo pokji fgjt gjib bddyb njuyrtf
 									mnlxdvvc nmfj bjgfdsv czhgujh jhgnlk. Lorem
 									ipsum dolor sit amet consectetur adipisicing
@@ -418,8 +422,8 @@
 								</p>
 							</div>
 						</div>
-						<div class="card1">
-							<div class="portfolioimg">
+						<div class="card-feedback">
+							<div class="portfolio-img">
 								<img
 									src="./images/profile2.jpg"
 									alt="обратная связь2"
@@ -431,7 +435,7 @@
 							<div class="info">
 								<h4>Johan Smith</h4>
 								<p class="client">CEO, ABC Agency</p>
-								<p class="undertext">
+								<p class="under-text">
 									dgghg iuhuo pokji fgjt gjib bddyb njuyrtf
 									mnlxdvvc nmfj bjgfdsv czhgujh jhgnlk. Lorem
 									ipsum dolor sit amet consectetur adipisicing
@@ -439,8 +443,8 @@
 								</p>
 							</div>
 						</div>
-						<div class="card1">
-							<div class="portfolioimg">
+						<div class="card-feedback">
+							<div class="portfolio-img">
 								<img
 									src="./images/profile3.jpg"
 									alt="обратная связь3"
@@ -452,7 +456,7 @@
 							<div class="info">
 								<h4>Elithabet Brown</h4>
 								<p class="client">Director Techno</p>
-								<p class="undertext">
+								<p class="under-text">
 									dgghg iuhuo pokji fgjt gjib bddyb njuyrtf
 									mnlxdvvc nmfj bjgfdsv czhgujh jhgnlk. Lorem
 									ipsum dolor sit amet consectetur adipisicing
@@ -462,7 +466,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="visitportfolio container" id="Portfolio">
+				<div class="visit-portfolio container" id="Portfolio">
 					<div class="offer">
 						<p class="one">My Portfolio</p>
 						<h2>VISIT MY PORTFOLIO</h2>
@@ -500,48 +504,48 @@
 							<img
 								src="./images/img-1.jpg"
 								alt="img-1"
-								width="470"
-								height="450"
+								width="450"
+								height="400"
 							/>
 						</div>
 						<div class="img-2">
 							<img
 								src="./images/img-2.jpg"
 								alt="img-2"
-								width="470"
-								height="450"
+								width="450"
+								height="400"
 							/>
 						</div>
 						<div class="img-3">
 							<img
 								src="./images/img-3.jpg"
 								alt="img-3"
-								width="470"
-								height="450"
+								width="450"
+								height="400"
 							/>
 						</div>
 						<div class="img-4">
 							<img
 								src="./images/img-4.jpg"
 								alt="img-4"
-								width="470"
-								height="450"
+								width="450"
+								height="400"
 							/>
 						</div>
 						<div class="img-5">
 							<img
 								src="./images/img-5.jpg"
 								alt="img-5"
-								width="470"
-								height="450"
+								width="450"
+								height="400"
 							/>
 						</div>
 						<div class="img-6">
 							<img
 								src="./images/img-6.jpg"
 								alt="img-6"
-								width="470"
-								height="450"
+								width="450"
+								height="400"
 							/>
 						</div>
 					</div>
@@ -550,16 +554,16 @@
 							<img
 								src="./images/img-7.jpg"
 								alt="img-7"
-								width="470"
-								height="450"
+								width="450"
+								height="400"
 							/>
 						</div>
 						<div class="img-8">
 							<img
 								src="./images/img-8.jpg"
 								alt="img-8"
-								width="960"
-								height="450"
+								width="918"
+								height="400"
 							/>
 						</div>
 					</div>
@@ -574,7 +578,7 @@
 							<img
 								src="./images/partner-astra1.jpg"
 								alt="партнер1"
-								width="220"
+								width="200"
 								height="150"
 							/>
 						</div>
@@ -582,7 +586,7 @@
 							<img
 								src="./images/partner-brainstorm.jpg"
 								alt="партнер2"
-								width="220"
+								width="200"
 								height="150"
 							/>
 						</div>
@@ -590,7 +594,7 @@
 							<img
 								src="./images/partner-astra1.jpg"
 								alt="партнер3"
-								width="220"
+								width="200"
 								height="150"
 							/>
 						</div>
@@ -598,41 +602,42 @@
 							<img
 								src="./images/partner-valentine's-day-.jpg"
 								alt="партнер4"
-								width="220"
+								width="200"
 								height="150"
 							/>
 						</div>
 						<div class="p1">
 							<img
-								src="./images/partner-flower.jpg"
+								src="./images/partner-brainstorm.jpg"
 								alt="партнер5"
-								width="220"
+								width="200"
 								height="150"
 							/>
 						</div>
 						<div class="p1">
 							<img
-								src="./images/partner6.jpg"
+								src="./images/partner-valentine's-day-.jpg"
 								alt="партнер6"
-								width="220"
+								width="200"
 								height="150"
 							/>
 						</div>
 					</div>
 				</div>
-				<div class="latestblog container" id="Blog">
+				<div class="latest-blog container" id="Blog">
 					<div class="offer">
 						<p class="one">My Blog</p>
 						<h2>LATEST BLOG</h2>
-						<div class="latestcards">
-							<div class="latestcard">
-								<div class="imglate">
+					</div>
+						<div class="latest-cards">
+							<div class="latest-card">
+								<div class="img-late">
 									<img
 										src="./images/img-one.jpg"
 										alt="реклама блок1"
-										class="latestimg"
-										width="480"
-										height="450"
+										class="latest-img"
+										width="450"
+										height="400"
 									/>
 								</div>
 								<div class="latest">
@@ -646,14 +651,14 @@
 									</div>
 								</div>
 							</div>
-							<div class="latestcard">
-								<div class="imglate">
+							<div class="latest-card">
+								<div class="img-late">
 									<img
 										src="./images/img-two.jpg"
 										alt="реклама блок2"
-										class="latestimg"
-										width="480"
-										height="450"
+										class="latest-img"
+										width="450"
+										height="400"
 									/>
 								</div>
 								<div class="latest">
@@ -667,14 +672,14 @@
 									</div>
 								</div>
 							</div>
-							<div class="latestcard">
-								<div class="imglate">
+							<div class="latest-card">
+								<div class="img-late">
 									<img
 										src="./images/img-three.jpg"
 										alt="реклама блок3"
-										class="latestimg"
-										width="480"
-										height="450"
+										class="latest-img"
+										width="450"
+										height="400"
 									/>
 								</div>
 								<div class="latest">
@@ -689,8 +694,8 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="want-hear container">
+				</div>
+					<div class="want-hear container" id="btn">
 						<div class="offer">
 							<p class="one">My Contact</p>
 							<h2>I WANT TO HEAR FROM YOU</h2>
@@ -721,7 +726,7 @@
 									<div class="addres">
 										<h3>📍Address</h3>
 										<div class="add">
-											202 Dog Hill Lane Belait,KS 67420
+											202 Dog Hill Lane Belait,KS 67
 										</div>
 									</div>
 									<div class="number">
@@ -745,12 +750,14 @@
 					<div class="footer-content">
 						<div class="logo">
 							<div class="logofoot">
+								<a  href="#Home">
 								<img
 									src="./images/logo.jpg"
 									alt="логотип футера"
 									width="250"
 									height="80"
 								/>
+								</a>
 							</div>
 							<p class="footwrite">
 								Lorem ipsum dolor sit Nihil totam modi sed, amet
@@ -759,9 +766,7 @@
 								adipisicing elit. Quisquam, quod.
 							</p>
 							<div class="mail">
-								<a href="example@gmail.com"
-									>example@gmail.com</a
-								>
+								example@gmail.com
 							</div>
 						</div>
 						<div class="footer-links">
@@ -789,9 +794,7 @@
 						<div class="follow-me">
 							<div class="footer-links">
 								<h3>Follow Me</h3>
-								<a href="maps"
-									>📍202 Dog Hill Lane Belait,KS 67420</a
-								>
+								<a href="maps">📍202 Dog Hill Lane Belait,KS 67</a>
 								<a href="tel:18009156270">📞 1-800-915-6270</a>
 							</div>
 						</div>
@@ -807,7 +810,6 @@
 					</div>
 				</div>
 			</footer>
-		</div>
 		<script src="./js/script.js"></script>
 	</body>
 </html>

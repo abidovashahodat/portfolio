@@ -5,13 +5,14 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 17pt;
+	font-weight: 900;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.btn:hover {
+.btn:hover ,.btn-contact:hover {
 	background-color: rgb(11, 23, 113);
 	transform: scale(1.05);
 }
@@ -39,7 +40,7 @@ html {
 }
 
 .solution {
-	color: rgb(17, 64, 235);
+	color: var(--primary);
 }
 
 h1 {
@@ -55,7 +56,7 @@ h1 {
 	margin-top: -50px;
 }
 
-.btn {
+.btn ,.btn-contact {
 	background-color: var(--primary);
 	color: white;
 	border: none;
@@ -75,6 +76,10 @@ h1 {
 	align-items: center;
 	gap: 80px;
 }
+.h2{
+	line-height: 65px;
+}
+
 
 .achievements {
 	display: flex;
@@ -93,6 +98,10 @@ h1 {
 .achieve h3 {
 	font-size: 50px;
 	margin-top: 0px;
+}
+.under-write-about {
+	line-height: 30px;
+	margin-top: -20px;
 }
 
 .list-about {
@@ -114,7 +123,6 @@ h1 {
 
 .offer {
 	text-align: center;
-	padding: 50px;
 }
 
 .offer-cards {
@@ -131,17 +139,17 @@ h1 {
 	align-items: center;
 	text-align: center;
 	padding: 20px;
-	box-shadow: 5px 0 15px 0 gray;
 	border-radius: 10px;
 	width: 300px;
 	height: 330px;
-	transition: background-color 0.3s ease, transform 0.3s ease;
+	transition: all 0.3s ease ;
 	cursor: pointer;
 }
 
 .card:hover {
 	transform: translateY(-5px) scale(1.03);
-	background-color: rgb(250, 242, 232);
+	background-color: rgb(250, 252, 253);
+	box-shadow: 0 1px 8px rgba(102, 102, 102, 0.1);
 }
 
 h2 {
@@ -219,6 +227,11 @@ h2 {
 	height: 80px;
 }
 
+#Portfolio ,#Testimonial, #Resume {
+	margin-top: 100px;
+	text-align: center;
+}
+
 .img-1 {
 	grid-area: img1;
 	transition: transform 0.3s ease, opacity 0.3s ease;
@@ -280,11 +293,11 @@ h2 {
 		"img4 img5 img6";
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
-	gap: 20px;
+	gap: 18px;
 	justify-content: center;
 	align-items: center;
-	margin-left: 220px;
-	margin-top: 50px;
+	margin-left: 195px;
+	margin-top: 30px;
 	cursor: pointer;
 }
 
@@ -294,77 +307,82 @@ h2 {
 	grid-template-areas: "img-7 img-8";
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: auto;
-	gap: 20px;
 	justify-content: center;
 	align-items: center;
-	margin-left: 220px;
+	margin-left: 195px;
 	margin-top: 20px;
+	gap: 18px;
 	cursor: pointer;
 }
 
+
 .latest {
 	margin-left: 5px;
-	margin-top: 20px;
+	margin-top: 15px;
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
 }
 
-.latestcards {
+.latest-cards {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
+	gap: 8px;
 }
 
-.latestimg {
+.latest-img {
 	transition: all.5s ease-in-out;
 }
 
-.latestimg:hover {
+.latest-img:hover {
 	opacity: 0.8;
 	transform: translateY(-5px) scale(1.03);
 	cursor: pointer;
 }
 
-.latestcard {
+.latest-card {
 	width: 500px;
 	height: 600px;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 }
 
 .p1 {
-	border: 1px solid rgb(186, 180, 180);
+	border: 0.5px solid rgb(239, 239, 239);
 	transition: 0.5s ease-in-out;
 }
 .p1:hover {
-	box-shadow: 0 10px 10px 0 gray;
+	box-shadow: 0px 10px 10px 4px gray;
 	transform: translateY(-5px) scale(1.03);
 	cursor: pointer;
 }
 
-.latestcard a {
+.latest-card a {
 	text-decoration: none;
 	color: rgb(91, 135, 216);
 	transition: all 0.3s ease;
 }
-.latestcard a:hover {
+.latest-card a:hover {
 	color: rgb(7, 60, 96);
+}
+.reputed{
+	margin-top: 80px;
+	text-align: center;
+	margin-bottom: 80px;
 }
 
 .reputed-img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 22px;
+	gap: 34px;
 }
 
-.card1 {
+.card-feedback {
 	width: 450px;
 	height: 300px;
-	background-color: rgb(198, 218, 247);
+	background-color: rgb(219, 231, 255);
 	text-align: center;
 	display: flex;
 	align-items: flex-start;
@@ -373,27 +391,31 @@ h2 {
 
 .cards {
 	display: flex;
-	gap: 50px;
+	gap: 18px;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 
+
+
 .cards h4 {
-	margin-left: 10px;
+	margin-left: 15px;
 	text-align: left;
 }
 
 .client {
 	text-align: left;
-	margin-left: 10px;
+	margin-left: 15px;
 	color: gray;
 	margin-bottom: 20px;
 	margin-top: -10px;
 }
 
-.undertext {
+.under-text {
 	line-height: 25px;
 	text-align: left;
+	margin-left: 15px;
 }
 
 .rounded {
@@ -403,10 +425,15 @@ h2 {
 .contact-container {
 	display: flex;
 	justify-content: space-between;
+	margin: 80px 0 50px 0px;
 }
 
 form {
 	flex: 1;
+}
+
+form button {
+	margin-top: 15px;
 }
 
 .address h3,
@@ -431,28 +458,28 @@ form {
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
 	height: 150px;
-	width: 800px;
-	margin-left: -55px;
-}
+	width: 800px;}
 
 textarea {
 	display: flex;
 	margin-top: 10px;
 	width: 800px;
 	height: 70px;
-	margin-left: -55px;
+	
 }
 input::placeholder {
 	padding-left: 10px;
+	font-size: 20px;
 }
 textarea::placeholder {
 	padding-left: 10px;
 	padding-top: 10px;
+	font-size: 20px;
 }
 
-form button {
-	margin-left: -55px;
-}
+.add{
+	margin-left: -12px;}
+
 
 form {
 	display: flex;
@@ -474,8 +501,13 @@ textarea {
 }
 
 .mail {
-	font-size: 30px;
+	font-size: 20px;
 	padding-top: -10px;
+	transition: all 0.3s ease;
+}
+
+.mail:hover {
+	color: var(--primary);
 }
 
 .mail a {
@@ -489,6 +521,10 @@ textarea {
 	align-items: center;
 }
 
+.footer-links h3 {
+	margin-left: 35px;
+}
+
 .footer-links {
 	display: flex;
 	flex-direction: column;
@@ -498,7 +534,6 @@ textarea {
 .footer-links a {
 	text-decoration: none;
 	color: white;
-	margin-left: -30px;
 	line-height: 30px;
 	transition: color 0.3s ease, opacity 0.3s ease;
 }
@@ -509,12 +544,20 @@ textarea {
 
 .follow-me {
 	margin-top: -70px;
+	margin-right: 12px;
+}
+
+.follow-me div h3{
+	margin-left: -2px;
 }
 
 .footer-links nav ul {
 	list-style: none;
 	margin-top: 10px;
+	
 }
+
+
 
 .footer-bottom {
 	display: flex;
@@ -528,11 +571,16 @@ textarea {
 .footer-bottom a {
 	text-decoration: none;
 	color: white;
+	transition: all 0.5s ease-in-out;
 }
 
 .rights {
 	display: flex;
-	gap: 60px;
+	gap: 60px;}
+
+.rights a:hover {
+	color: var(--primary);
+	opacity: 0.5;
 }
 
 .logofoot {
