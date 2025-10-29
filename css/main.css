@@ -497,9 +497,23 @@ textarea {
 	font-size: 20px;
 }
 
+.footer-about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 20%;
+}
+
+.footer-links-above {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin-top: 50px;
+}
+
 .footwrite {
-	font-size: 20px;
 	padding-top: 10px;
+	line-height: 25px;
 }
 
 .mail a {
@@ -513,9 +527,10 @@ textarea {
 	align-items: center;
 }
 
-.footer-links h3 {
-	margin-left: 35px;
+.footer-about .mail{
+	margin-left: 20px; 
 }
+
 
 .footer-links {
 	display: flex;
@@ -540,7 +555,7 @@ textarea {
 }
 
 .follow-me {
-	margin-top: -70px;
+	margin-top: -90px;
 	margin-right: 12px;
 }
 
@@ -586,4 +601,9 @@ textarea {
 
 .burger {
 	display: none;
+}
+
+.nav-foot{
+line-height: 35px;
+
 }

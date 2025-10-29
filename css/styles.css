@@ -48,6 +48,7 @@ header {
 	z-index: 10;
 	left: 0;
 	right: 0;
+	background: cover;
 }
 
 .nav-item {
@@ -88,6 +89,7 @@ header {
 .one {
 	position: relative;
 	left: 20px;
+	display: inline-block;
 }
 
 .one::before {
@@ -105,7 +107,7 @@ header {
 footer {
 	background-color: black;
 	color: white;
-	height: 500px;
+	height: 550px;
 	padding: 40px 0;
 }
 
@@ -171,6 +173,7 @@ footer {
 		left: 0;
 		z-index: 10;
 		transition: all 0.2s ease-in-out;
+		position: fixed;
 	}
 
 	.mobile-menu ul {
@@ -211,7 +214,7 @@ footer {
 			margin: 25px;
 			z-index: 11;}
 
-}
+
 
 	footer {
 		width: 100vw;
@@ -255,15 +258,16 @@ footer {
 		gap: 10px;
 	}
 
-	.logofoot {
+	.logo-foot {
 		margin-top: 0;
 		text-align: center;
 	}
-}
+
 
 .btn {
 	text-decoration: none;
 	font-weight: 500;
 	text-align: center;
 	padding-top: 13px;
+}
 }
