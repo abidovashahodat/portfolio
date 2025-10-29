@@ -12,7 +12,8 @@ html {
 	scroll-behavior: smooth;
 }
 
-.btn:hover ,.btn-contact:hover {
+.btn:hover,
+.btn-contact:hover {
 	background-color: rgb(11, 23, 113);
 	transform: scale(1.05);
 }
@@ -54,7 +55,8 @@ h1 {
 	margin-top: -50px;
 }
 
-.btn ,.btn-contact {
+.btn,
+.btn-contact {
 	background-color: var(--primary);
 	color: white;
 	border: none;
@@ -74,10 +76,9 @@ h1 {
 	align-items: center;
 	gap: 80px;
 }
-.h2{
+.h2 {
 	line-height: 65px;
 }
-
 
 .achievements {
 	display: flex;
@@ -94,12 +95,7 @@ h1 {
 }
 
 .achieve h3 {
-	font-size: 50px;
 	margin-top: 0px;
-}
-.under-write-about {
-	line-height: 30px;
-	margin-top: -20px;
 }
 
 .list-about {
@@ -139,7 +135,7 @@ h1 {
 	border-radius: 10px;
 	width: 300px;
 	height: 330px;
-	transition: all 0.3s ease ;
+	transition: all 0.3s ease;
 	cursor: pointer;
 }
 
@@ -228,7 +224,9 @@ h2 {
 	height: 80px;
 }
 
-#Portfolio ,#Testimonial, #Resume {
+#Portfolio,
+#Testimonial,
+#Resume {
 	margin-top: 100px;
 	text-align: center;
 }
@@ -316,7 +314,6 @@ h2 {
 	cursor: pointer;
 }
 
-
 .latest {
 	margin-left: 5px;
 	margin-top: 15px;
@@ -368,7 +365,7 @@ h2 {
 .latest-card a:hover {
 	color: rgb(7, 60, 96);
 }
-.reputed{
+.reputed {
 	margin-top: 80px;
 	text-align: center;
 	margin-bottom: 80px;
@@ -398,8 +395,6 @@ h2 {
 	align-items: center;
 	width: 100%;
 }
-
-
 
 .cards h4 {
 	margin-left: 15px;
@@ -459,14 +454,14 @@ form button {
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
 	height: 150px;
-	width: 800px;}
+	width: 800px;
+}
 
 textarea {
 	display: flex;
 	margin-top: 10px;
 	width: 800px;
 	height: 70px;
-	
 }
 
 input::placeholder {
@@ -480,9 +475,9 @@ textarea::placeholder {
 	font-size: 20px;
 }
 
-.add{
-	margin-left: -12px;}
-
+.add {
+	margin-left: -12px;
+}
 
 form {
 	display: flex;
@@ -500,7 +495,6 @@ textarea {
 .footer-about {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	width: 20%;
 }
 
@@ -524,13 +518,11 @@ textarea {
 .footer-content {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
 
-.footer-about .mail{
-	margin-left: 20px; 
+.footer-content h3 {
+	margin-top: 0;
 }
-
 
 .footer-links {
 	display: flex;
@@ -555,21 +547,13 @@ textarea {
 }
 
 .follow-me {
-	margin-top: -90px;
 	margin-right: 12px;
-}
-
-.follow-me div h3{
-	margin-left: -2px;
 }
 
 .footer-links nav ul {
 	list-style: none;
 	margin-top: 10px;
-	
 }
-
-
 
 .footer-bottom {
 	display: flex;
@@ -588,7 +572,8 @@ textarea {
 
 .rights {
 	display: flex;
-	gap: 60px;}
+	gap: 60px;
+}
 
 .rights a:hover {
 	color: var(--primary);
@@ -603,7 +588,6 @@ textarea {
 	display: none;
 }
 
-.nav-foot{
-line-height: 35px;
-
+.nav-foot {
+	line-height: 35px;
 }

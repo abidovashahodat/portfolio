@@ -1,16 +1,15 @@
-const immutableArr = [10, 11, 12];
+const immutableArr = [4, 1, 10, 5, 8];
 
-const result = immutableArr.map((n) => {
-	return n * 2;
-});
-const customResult = map2(immutableArr, (item) => item * 10);
-
-function map2(arr, func) {
-	const a = [];
+function isContain(arr, value) {
+	let n;
 
 	for (let i of arr) {
-		const res = func(i);
-		a.push(res);
+		if (i === value) {
+			n = true;
+			break;
+		}
 	}
-	return a;
+	return !!n;
 }
+
+console.log(isContain(immutableArr, 8));
