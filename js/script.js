@@ -30,6 +30,54 @@ const button = document.querySelector('.btn-contact');
     const target = document.querySelector('#btn');
     target.scrollIntoView({ behavior: 'smooth' });
   });
+  document.addEventListener("click", function () {});
+
+
+
+
+
+const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollUpBtn.classList.add("show");
+  } else {
+    scrollUpBtn.classList.remove("show");
+  }
+});
+
+scrollUpBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+const apiKey = "db18181f25347943f635ac1773709b41";
+  const city = "Dushanbe";
+  const weatherEl = document.getElementById("weather");
+
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
+    .then(res => res.json())
+    .then(data => {
+      const temp = Math.round(data.main.temp);
+      const main = data.weather[0].main;
+      let emoji = "☀️";
+
+      if (main === "Clouds") emoji = "☁️";
+      else if (main === "Rain") emoji = "🌧️";
+      else if (main === "Snow") emoji = "❄️";
+      else if (main === "Thunderstorm") emoji = "⛈️";
+      else if (main === "Drizzle") emoji = "🌦️";
+      else if (main === "Clear") emoji = "☀️";
+      else emoji = "🌤️";
+
+      weatherEl.textContent = `${emoji} ${temp}°C`;
+    })
+    .catch(() => {
+      weatherEl.textContent = "⚠️ Ошибка загрузки погоды";
+    });
+
 
 function calc() {
 	// TODO
