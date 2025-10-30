@@ -113,6 +113,8 @@ footer {
 	color: white;
 	height: 550px;
 	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .burger {

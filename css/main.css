@@ -12,8 +12,39 @@ html {
 	scroll-behavior: smooth;
 }
 
-.btn:hover,
-.btn-contact:hover {
+.roll-button {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-color: var(--primary);
+	color: white;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+	transition: all 0.5s ease;
+	font-size: 25px;
+	text-align: center;
+	padding: 10px;
+	z-index: 111;
+	opacity: 0;
+    pointer-events: none;
+}
+
+.roll-button.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.roll-button:hover {
+	background-color: rgb(11, 23, 113);
+	transform: scale(1.1);
+}
+
+.btn:hover ,.btn-contact:hover {
 	background-color: rgb(11, 23, 113);
 	transform: scale(1.05);
 }
@@ -70,6 +101,9 @@ h1 {
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 	transition: all 0.5s ease;
 	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
 }
 
 .about-me {
@@ -506,6 +540,7 @@ textarea {
 	justify-content: space-between;
 	width: 80%;
 	margin-top: 50px;
+	
 }
 
 .footwrite {
@@ -523,9 +558,7 @@ textarea {
 	justify-content: space-between;
 }
 
-.footer-content h3 {
-	margin-top: 0;
-}
+
 
 .footer-links {
 	display: flex;
