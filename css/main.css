@@ -30,21 +30,21 @@ html {
 	padding: 10px;
 	z-index: 111;
 	opacity: 0;
-    pointer-events: none;
+	pointer-events: none;
 }
 
 .roll-button.show {
-  opacity: 1;
-  pointer-events: auto;
+	opacity: 1;
+	pointer-events: auto;
 }
-
 
 .roll-button:hover {
 	background-color: rgb(11, 23, 113);
 	transform: scale(1.1);
 }
 
-.btn:hover ,.btn-contact:hover {
+.btn:hover,
+.btn-contact:hover {
 	background-color: rgb(11, 23, 113);
 	transform: scale(1.05);
 }
@@ -537,10 +537,8 @@ textarea {
 
 .footer-links-above {
 	display: flex;
-	justify-content: space-between;
-	width: 80%;
-	margin-top: 50px;
-	
+	justify-content: space-around;
+	width: 100%;
 }
 
 .footwrite {
@@ -556,9 +554,8 @@ textarea {
 .footer-content {
 	display: flex;
 	justify-content: space-between;
+	gap: 30px;
 }
-
-
 
 .footer-links {
 	display: flex;
@@ -566,7 +563,8 @@ textarea {
 	gap: 10px;
 }
 
-.footer-links ul {
+.footer-links ul,
+.footer-links h3 {
 	padding: 0;
 	margin-top: 0;
 }
