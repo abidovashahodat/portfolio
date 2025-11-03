@@ -53,6 +53,9 @@ scrollUpBtn.addEventListener("click", () => {
   });
 });
 
+const loader = document.getElementById("weather-loader");
+loader.style.display = "block";
+
 const apiKey = "db18181f25347943f635ac1773709b41";
   const city = "Dushanbe";
   const weatherEl = document.getElementById("weather");
@@ -76,7 +79,11 @@ const apiKey = "db18181f25347943f635ac1773709b41";
     })
     .catch(() => {
       weatherEl.textContent = "⚠️ Ошибка загрузки погоды";
-    });
+    })
+
+	.finally(() => {
+	 loader.style.display = "none";});
+	
 
 
 function calc() {
