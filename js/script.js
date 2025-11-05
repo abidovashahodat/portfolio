@@ -90,3 +90,35 @@ function returningFunction(a, b) {
 
 	return "privet";
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+	const themeBtn = document.querySelector('.night-theme-btn');
+
+	
+	const applyTheme = (theme) => {
+		if (theme === 'night') {
+			document.body.classList.add('night-theme');
+		} else {
+			document.body.classList.remove('night-theme');
+		}
+	};
+
+	
+	const savedTheme = localStorage.getItem('theme') || 'light';
+	applyTheme(savedTheme);
+
+
+	themeBtn.addEventListener('click', () => {
+		let currentTheme = 'light';
+		if (document.body.classList.contains('night-theme')) {
+		
+			document.body.classList.remove('night-theme');
+			localStorage.setItem('theme', 'light');
+		} else {
+			
+			document.body.classList.add('night-theme');
+			localStorage.setItem('theme', 'night');
+			currentTheme = 'night';
+		}
+	});
+});
