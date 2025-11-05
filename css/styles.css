@@ -272,3 +272,66 @@ footer {
 		padding-top: 13px;
 	}
 }
+/* Курс валют */
+.currency-module {
+	width: 100%;
+	max-width: 400px;
+	background-color: #FFFFFF;
+	border-radius: 12px;
+	box-shadow:  0 4px 12px rgba(0, 0, 0, 0.05);
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+.currency-module h2 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #1a202c;
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.rates-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.rates-table th,
+.rates-table td {
+	padding: 14px 10px;
+	text-align: left;
+	font-size: 14px;
+	border-bottom: 1px solid #edf2f7;
+}
+.rates-table th {
+	font-weight: 600;
+	color: #718096;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.rates-table td {
+	
+	font-weight: 500;
+}
+
+.rates-table th:nth-child(2),
+.rates-table td:nth-child(2),
+.rates-table th:nth-child(3),
+.rates-table td:nth-child(3) {
+	text-align: right;
+}
+.rates-table tbody tr:last-child td {
+	border-bottom: none;
+}
+.currency-icon {
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 500;
+	text-align: center;
+	padding-top: 13px;
+}
