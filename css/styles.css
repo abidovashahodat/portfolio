@@ -11,7 +11,7 @@
 	box-sizing: border-box;
 	font-family: "Nunito", sans-serif;
 	font-weight: 500;
-	
+
 }
 
 h1 {
@@ -200,9 +200,11 @@ footer {
 		line-height: 40px;
 		transition: all 0.3s ease;
 	}
+
 	.mobile-menu ul a:hover {
 		color: var(--primary);
 	}
+
 	.mobile-menu .btn {
 		margin: 25px;
 		width: 250px;
