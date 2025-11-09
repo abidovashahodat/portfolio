@@ -24,8 +24,6 @@
 			<button class="burger" id="burger-btn">
 				<img src="./images/burger.png" alt="burger" width="30" height="30" />
 			</button>
-			<div id="weather-loader" class="loader"></div>
-			<div id="weather"></div>
 
 			<nav class="nav-head">
 				<ul>
@@ -64,8 +62,47 @@
 			</nav>
 			<button class="btn-contact">Contact Us</button>
 		</div>
+	<div id="weather-loader" class="loader"></div>
+			<div id="weather"></div>
+			<!-- <select id="task">
+				<option value="">Theme</option>
+				<option value="">Features</option>
+			</select> -->
 	</header>
 	<main>
+        <button class="features" id="feature">></button>
+		<nav class="menu" id="menu-features">
+				<div class="desktop-head">
+					<img src="./images/logo.jpg" alt="логотип" width="120" height="40" />
+					<button class="close-btn-sidebar" id="close-btn-sidebar">
+						<svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#eeeeee"
+							viewBox="0 0 24 24">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M6 18 17.94 6M18 18 6.06 6" />
+						</svg>
+					</button>
+				</div>
+
+				<ul>
+					<li class="nav-item"><a href="#Home">HOME</a></li>
+					<li class="nav-item"><a href="#btn">CONTACTS</a></li>
+					<li class="nav-item"><a href="#">FEATURES</a></li>
+				</ul>
+				<div class="languages">Languages</div>
+					<ul>
+					<li class="nav-item"><a href="#">English</a></li>
+					<li class="nav-item"><a href="#">Russian</a></li>	
+					<li class="nav-item"><a href="#">Tajik</a></li>
+					</ul>
+				
+				<span class="themes">Themes</span>
+					<select id="theme-select">
+						<option value="light">Light</option>
+						<option value="dark">Dark</option>
+					</select>
+			</nav>
+
 		<button class="roll-button" id="scrollUpBtn">
 			<img src="./images/arrow-up.png" alt="кнопка вверх" width="20" height="20" />
 		</button>
@@ -416,30 +453,30 @@
 
 			<div class="gallery">
 				<div class="img-1">
-					<img src="./images/gallery-1.jpg" alt="img-1" width="450" height="400" />
+					<img src="./images/gallery-1.jpg" alt="img-1" width="440" height="400" />
 				</div>
 				<div class="img-2">
-					<img src="./images/gallery-2.jpg" alt="img-2" width="450" height="400" />
+					<img src="./images/gallery-2.jpg" alt="img-2" width="440" height="400" />
 				</div>
 				<div class="img-3">
-					<img src="./images/gallery-3.jpg" alt="img-3" width="450" height="400" />
+					<img src="./images/gallery-3.jpg" alt="img-3" width="440" height="400" />
 				</div>
 				<div class="img-4">
-					<img src="./images/gallery-4.jpg" alt="img-4" width="450" height="400" />
+					<img src="./images/gallery-4.jpg" alt="img-4" width="440" height="400" />
 				</div>
 				<div class="img-5">
-					<img src="./images/gallery-5.jpg" alt="img-5" width="450" height="400" />
+					<img src="./images/gallery-5.jpg" alt="img-5" width="440" height="400" />
 				</div>
 				<div class="img-6">
-					<img src="./images/gallery-6.jpg" alt="img-6" width="450" height="400" />
+					<img src="./images/gallery-6.jpg" alt="img-6" width="440" height="400" />
 				</div>
 			</div>
 			<div class="gallery2">
 				<div class="img-7">
-					<img src="./images/gallery-7.jpg" alt="img-7" width="450" height="400" />
+					<img src="./images/gallery-7.jpg" alt="img-7" width="440" height="400" />
 				</div>
 				<div class="img-8">
-					<img src="./images/gallery-8.jpg" alt="img-8" width="918" height="400" />
+					<img src="./images/gallery-8.jpg" alt="img-8" width="895" height="400" />
 				</div>
 			</div>
 		</div>
@@ -477,7 +514,7 @@
 			<div class="latest-cards">
 				<div class="latest-card">
 					<div class="img-late">
-						<img src="./images/img-one.jpg" alt="реклама блок1" class="latest-img" width="450"
+						<img src="./images/img-one.jpg" alt="реклама блок1" class="latest-img" width="445"
 							height="400" />
 					</div>
 					<div class="latest">
@@ -493,7 +530,7 @@
 				</div>
 				<div class="latest-card">
 					<div class="img-late">
-						<img src="./images/gallery-9.jpg" alt="реклама блок2" class="latest-img" width="450"
+						<img src="./images/gallery-9.jpg" alt="реклама блок2" class="latest-img" width="445"
 							height="400" />
 					</div>
 					<div class="latest">
@@ -509,7 +546,7 @@
 				</div>
 				<div class="latest-card">
 					<div class="img-late">
-						<img src="./images/img-three.jpg" alt="реклама блок3" class="latest-img" width="450"
+						<img src="./images/img-three.jpg" alt="реклама блок3" class="latest-img" width="445"
 							height="400" />
 					</div>
 					<div class="latest">

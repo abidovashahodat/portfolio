@@ -32,6 +32,24 @@ button.addEventListener("click", () => {
 });
 document.addEventListener("click", function () {});
 
+
+
+const sidebarBtn = document.getElementById("feature");
+const closeBtnSidebar = document.getElementById("close-btn-sidebar");
+const Menu = document.getElementById("menu-features");
+
+sidebarBtn.addEventListener("click", () => {
+	Menu.style.transform = "translateX(0)";
+});
+
+closeBtnSidebar.addEventListener("click", () => {
+	Menu.style.transform = "translateX(-100%)";
+});
+
+document.addEventListener("click", function () {});
+
+
+
 const scrollUpBtn = document.getElementById("scrollUpBtn");
 
 window.addEventListener("scroll", () => {
@@ -81,6 +99,8 @@ fetch(
 	.finally(() => {
 		loader.style.display = "none";
 	});
+
+
 
 function calc() {
 	// TODO
