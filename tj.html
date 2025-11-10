@@ -24,8 +24,6 @@
             <button class="burger" id="burger-btn">
                 <img src="./images/burger.png" alt="меню" width="30" height="30" />
             </button>
-            <div id="weather-loader" class="loader"></div>
-            <div id="weather"></div>
 
             <nav class="nav-head">
                 <ul>
@@ -64,8 +62,44 @@
             </nav>
             <button class="btn-contact">Тамос</button>
         </div>
+        <div id="weather-loader" class="loader"></div>
+            <div id="weather"></div>
     </header>
     <main>
+        <button class="features" id="feature">></button>
+		<nav class="menu" id="menu-features">
+				<div class="desktop-head">
+					<img src="./images/logo.jpg" alt="логотип" width="120" height="40" />
+					<button class="close-btn-sidebar" id="close-btn-sidebar">
+						<svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#eeeeee"
+							viewBox="0 0 24 24">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M6 18 17.94 6M18 18 6.06 6" />
+						</svg>
+					</button>
+				</div>
+
+				<ul>
+					<li class="nav-item"><a href="#Home">АСОСИ</a></li>
+					<li class="nav-item"><a href="#btn">ТАМОС</a></li>
+					<li class="nav-item"><a href="#">ХУСУСИЯТХО</a></li>
+					<li class="nav-item"><a href="terms.html">СИЁСАТИ МАХФИЯТ</a></li>
+					<li class="nav-item"><a href="privacy-page.html">ШАРТХО ВА ШАРОИТ</a></li>
+				</ul>
+				<div class="languages">Languages</div>
+					<ul>
+					<li class="nav-item"><a href="index.html">Хоричи</a></li>
+					<li class="nav-item"><a href="ru.html">Руси</a></li>	
+					<li class="nav-item"><a href="tj.html">Точики</a></li>
+					</ul>
+				
+				<span class="themes">Мавзуъ</span>
+					<select id="theme-select">
+						<option value="light">Равшан</option>
+						<option value="dark">Торик</option>
+					</select>
+			</nav>
         <button class="roll-button" id="scrollUpBtn">
             <img src="./images/arrow-up.png" alt="тугмаи ба боло" width="20" height="20" />
         </button>
