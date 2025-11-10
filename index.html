@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio Website</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/night-theme.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Portfolio Website</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="./css/main.css" />
-	<link rel="stylesheet" href="./css/styles.css" />
-</head>
+	<body>
+		<div>
+			<header class="container">
+				<button class="night-theme-btn">
+					<svg class="night-theme-btn night-theme-btn__icon_sun" viewBox="0 0 24 24"><title>Sun-fill SVG Icon</title><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10"/><path fill="currentColor" fill-rule="evenodd" d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1M3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414m17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0M1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1m19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1M6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0m11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1" clip-rule="evenodd"/></svg>
+					<svg class="night-theme-btn night-theme-btn__icon_moon" viewBox="0 0 24 24"><title>Moon-fill SVG Icon</title><path fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3"/></svg>
+				</button>
+				<div class="head">
+					<img
+						src="./images/logo.jpg"
+						alt="логотип"
+						width="250"
+						height="80"
+					/>
+				</div>
+				<button class="burger" id="burger-btn">
+					<img
+						src="./images/burger.png"
+						alt="burger"
+						width="30"
+						height="30"
+					/>
+				</button>
 
 <body>
 	<header>
@@ -41,23 +67,18 @@
 				<div class="mobile-head">
 					<img src="./images/logo.jpg" alt="логотип" width="120" height="40" />
 					<button class="close-btn" id="close-btn">
-						<svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
-							xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#eeeeee"
-							viewBox="0 0 24 24">
-							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-								d="M6 18 17.94 6M18 18 6.06 6" />
-						</svg>
+						<img src="./images/Vector.svg" alt="close" width="20" height="20" />
 					</button>
-				</div>
-				<ul>
-					<li class="nav-item"><a href="#Home">HOME</a></li>
-					<li class="nav-item"><a href="#About">ABOUT</a></li>
-					<li class="nav-item"><a href="#Services">SERVICES</a></li>
-					<li class="nav-item"><a href="#Portfolio">PORTFOLIO</a></li>
-					<li class="nav-item"><a href="#Resume">RESUME</a></li>
-					<li class="nav-item"><a href="#Blog">BLOG</a></li>
-					<li class="nav-item"><a href="#Testimonial">TESTIMONIAL</a></li>
-				</ul>
+					<ul>
+						<li class="nav-item"><a href="#">Home</a></li>
+						<li class="nav-item"><a href="#">About</a></li>
+						<li class="nav-item"><a href="#">Services</a></li>
+						<li class="nav-item"><a href="#">Portfolio</a></li>
+						<li class="nav-item"><a href="#">Resume</a></li>
+						<li class="nav-item"><a href="#">Blog</a></li>
+						<li class="nav-item"><a href="#">Testimonial</a></li>
+					</ul>
+				</nav>
 				<button class="btn">Contact Us</button>
 			</nav>
 			<button class="btn-contact">Contact Us</button>
@@ -129,329 +150,372 @@
 				<div>
 					<img src="./images/first.jpg" alt="фронтенд разработчик" width="400" height="350" />
 				</div>
-			</div>
-		</div>
 
-		<div class="about-me container" id="About">
-			<div class="about-img">
-				<img src="./images/about-me.jpg" alt="обо мне" width="600" height="800" />
-			</div>
-			<div class="about-content">
-				<p class="one">About Me</p>
-				<h2 class="h2">From Idea to Code - I'll Make It Work</h2>
-				<p class="under-write-about">
-					I transform complex challenges into elegant, functional,
-					and scalable digital solutions. With a strong focus on
-					clean architecture and user-centered design, I bridge
-					the gap between creative vision and technical execution.
-					Whether you need a dynamic web application, a responsive
-					website, or a robust backend system, I build software that
-					works flawlessly.
-				</p>
-				<div class="achievements">
-					<div class="achieve">
-						<h3>25+</h3>
-						<p>Projects Completed</p>
+				<div class="about-me container">
+					<div class="about-img">
+						<img
+							src="./images/about.jpg"
+							alt="обо мне"
+							width="600"
+							height="800"
+						/>
 					</div>
-					<div class="achieve">
-						<h3>0+</h3>
-						<p>Years of Experience</p>
-					</div>
-				</div>
-				<div class="list-about">
-					<nav>
-						<ul>
-							<li>✔️ Clean and efficient code</li>
-							<li>✔️ Web Frontend Development</li>
-						</ul>
-					</nav>
-					<nav>
-						<ul>
-							<li>
-								✔️ Innovative and User-friendly
-								solutions
-							</li>
-							<li>✔️ Unlimmited revisions & support</li>
-						</ul>
-					</nav>
-				</div>
-				<a href="#" download="" class="btn">Download my CV</a>
-			</div>
-		</div>
-		<div class="offer container" id="Services">
-			<p class="one">My Service</p>
-			<h2>SERVICES I OFFER</h2>
-			<div class="offer-cards">
-				<div class="card">
-					<img src="./images/component-web.png" alt="веб разработчик" width="80" height="80" />
-					<h4>Web Developer</h4>
-					<p>
-						Crafting responsive, high-performance
-						websites tailored to your brand. From
-						landing pages to complex web apps, we
-						bring your digital vision to life.
-					</p>
-				</div>
-				<div class="card">
-					<img src="./images/Mobile-development-icon.svg" alt="мобильный разработчик" width="80"
-						height="80" />
-					<h4>Mobile App</h4>
-					<p>
-						Designing sleek, user-friendly mobile
-						applications for iOS and Android. We
-						focus on functionality, speed, and
-						seamless user experiences.
-					</p>
-				</div>
-				<div class="card">
-					<img src="./images/ux-ui.png" alt="UI/UX дизайн" width="90" height="90" />
-					<h4>UI/UX Design</h4>
-					<p>
-						Creating intuitive interfaces and
-						delightful user journeys. We blend
-						aesthetics with usability to ensure
-						your product feels as good as it looks.
-					</p>
-				</div>
-				<div class="card">
-					<img src="./images/graffic-design-Development.svg" alt="графический дизайн" width="80"
-						height="80" />
-					<h4>Graffic Design</h4>
-					<p>
-						Visual storytelling that captivates.
-						Logos, branding, marketing materials—our
-						designs make your message stand out and stick.
-					</p>
-				</div>
-				<div class="card">
-					<img src="./images/seo.svg" alt="SEO оптимизация" width="80" height="80" />
-					<h4>SEO Optimisation</h4>
-					<p>
-						Boost your online presence with our
-						SEO services. We optimize your website
-						to rank higher in search results,
-						driving organic traffic and growth.
-					</p>
-				</div>
-				<div class="card">
-					<img src="./images/wordpress.png" alt="WordPress разработчик" width="80" height="80" />
-					<h4>WordPress Developer</h4>
-					<p>
-						Custom WordPress solutions tailored to
-						your needs. From themes to plugins, we
-						build and maintain sites that are easy
-						to manage and scale.
-					</p>
-				</div>
-				<div class="card">
-					<img src="./images/app-development.png" alt="разработка приложений" width="80" height="80" />
-					<h4>APP Development</h4>
-					<p>
-						End-to-end app development for web,
-						desktop, and mobile platforms.
-						We turn ideas into powerful, scalable
-						software solutions.
-					</p>
-				</div>
-				<div class="card">
-					<img src="./images/business.png" alt="бизнес стратегия" width="80" height="80" />
-					<h4>Business Strategy</h4>
-					<p>
-						Strategic consulting to drive growth
-						and efficiency. We analyze your
-						business needs and craft tailored
-						solutions for success.
-					</p>
-				</div>
-			</div>
-		</div>
-		<section class="experience-bg" id="Resume">
-			<div class="experience container">
-				<p class="one">My Resume</p>
-				<h2>10+ YEARS OF EXPERIENCE</h2>
-				<div class="section">
-					<div class="left">
-						<div class="dot"></div>
-						<h2>Education</h2>
-					</div>
-					<div class="section-card">
-						<div class="item">
-							<h3>BSc in Computer Science</h3>
-							<p>University of ULAV (2018 - 2022)</p>
-							<p>
-								Focus on development and computational sciences
-							</p>
-						</div>
-						<div class="item">
-							<h3>AS - Science & Information</h3>
-							<p>University of ULAV (2016 - 2018)</p>
-							<p>
-								The program included courses in programming and analytics
-
-							</p>
-						</div>
-						<div class="item">
-							<h3>Secondary School Education</h3>
-							<p>Kindergarden (2006 - 2016)</p>
-							<p>
-								Foundations of academic knowledge
-								and social skills
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="section">
-					<div class="left">
-						<div class="dot"></div>
-						<h2>Software Skills</h2>
-					</div>
-					<div class="section-card">
-						<div class="item">
-							<h3>UI/UX Design</h3>
-							<p>
-								Figma
-								----------------------------------90%<br />Adobe
-								XD -----------------------------85%<br />Photoshop
-								-----------------------------80%
-							</p>
-						</div>
-						<div class="item">
-							<h3>Web Developer</h3>
-							<p>
-								WordPress
-								-----------------------------90%<br />Mockplus
-								------------------------------85%<br />Weebly
-								---------------------------------80%
-							</p>
-						</div>
-						<div class="item">
-							<h3>App Development</h3>
-							<p>
-								Quixy
-								----------------------------------92%<br />AppyPie
-								-------------------------------87%<br />iBuildApp
-								-----------------------------82%
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="section">
-					<div class="left">
-						<div class="dot"></div>
-						<h2>Experience</h2>
-					</div>
-					<div class="section-card">
-						<div class="item">
-							<h3>Web Developer & Trainer</h3>
-							<p>Brac Developer Team (2012 - 2016)</p>
-							<p>
-								Interface development and mentoring junior developers
-
-							</p>
-						</div>
-						<div class="item">
-							<h3>Front-end Developer</h3>
-							<p>Brane (2020 - 2021)</p>
-							<p>
-								Team-based development and technical guidance
-							</p>
-						</div>
-						<div class="item">
-							<h3>UI/UX Designer</h3>
-							<p>Google Out Tech (2017 - Present)</p>
-							<p>
-								Implementing modern solutions and user support
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="offer" id="Testimonial">
-			<p class="one">Testimonial</p>
-			<h2>CLIENT FEEDBACK</h2>
-			<div class="cards">
-				<div class="card-feedback">
-					<div class="portfolio-img">
-						<img src="./images/profile1.jpg" alt="обратная связь" class="rounded" width="100"
-							height="100" />
-					</div>
-					<div class="info">
-						<h4>John K. Meraz</h4>
-						<p class="client">CEO, XYZ Group</p>
-						<p class="under-text">
-							Working with this frontend developer was a
-							fantastic experience. The site looks amazing
-							and performs flawlesslyTheir dedication,
-							creativity, and attention to detail exceeded our expectations.
-
+					<div class="about-content">
+						<p class="one">About Me</p>
+						<h2>From Idea to Code - I'll Make It Work</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Voluptatibus, perferendis? Fugit, iusto quasi.
+							Dolor tempora exercitationem pariatur nesciunt, enim
+							mollitia neque quam, obcaecati quas quia a placeat
+							autem temporibus molestiae?
 						</p>
+						<div class="achievements">
+							<div class="achieve">
+								<h3>25+</h3>
+								<p>Projects Completed</p>
+							</div>
+							<div class="achieve">
+								<h3>0+</h3>
+								<p>Years of Experience</p>
+							</div>
+						</div>
+						<div class="list-about">
+							<nav>
+								<ul>
+									<li>✔️ Clean and efficient code</li>
+									<li>✔️ Web Frontend Development</li>
+								</ul>
+							</nav>
+							<nav>
+								<ul>
+									<li>
+										✔️ Innovative and User-friendly
+										solutions
+									</li>
+									<li>✔️ Unlimmited revisions & support</li>
+								</ul>
+							</nav>
+						</div>
+						<a href="#" download="" class="btn">Download my CV</a>
 					</div>
 				</div>
-				<div class="card-feedback">
-					<div class="portfolio-img">
-						<img src="./images/profile2.jpg" alt="обратная связь2" class="rounded" width="100"
-							height="100" />
-					</div>
-					<div class="info">
-						<h4>Johan Smith</h4>
-						<p class="client">CEO, ABC Agency</p>
-						<p class="under-text">
-							Their professionalism and expertise are
-							unmatched. They took our vision and turned it
-							into reality, delivering a product that not only
-							looks great but also performs flawlessly.
-						</p>
+				<div class="offer container">
+					<p class="one">My Service</p>
+					<h2>SERVICES I OFFER</h2>
+					<div class="offer-cards">
+						<div class="card">
+							<img
+								src="./images/component-web.png"
+								alt="веб разработчик"
+								width="80"
+								height="80"
+							/>
+							<h4>Web Developer</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus, perferendis?
+								Fugit, iusto quasi. Dolor tempora
+							</p>
+						</div>
+						<div class="card">
+							<img
+								src="./images/Mobile-development-icon.svg"
+								alt="мобильный разработчик"
+								width="80"
+								height="80"
+							/>
+							<h4>Mobile App</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus, perferendis?
+								Fugit, iusto quasi. Dolor tempora
+							</p>
+						</div>
+						<div class="card">
+							<img
+								src="./images/ux-ui.png"
+								alt="UI/UX дизайн"
+								width="90"
+								height="90"
+							/>
+							<h4>UI/UX Design</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus, perferendis?
+								Fugit, iusto quasi. Dolor tempora
+							</p>
+						</div>
+						<div class="card">
+							<img
+								src="./images/graffic-design-Development.svg"
+								alt="графический дизайн"
+								width="80"
+								height="80"
+							/>
+							<h4>Graffic Design</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus, perferendis?
+								Fugit, iusto quasi. Dolor tempora
+							</p>
+						</div>
+						<div class="card">
+							<img
+								src="./images/seo.svg"
+								alt="SEO оптимизация"
+								width="80"
+								height="80"
+							/>
+							<h4>SEO Optimisation</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus, perferendis?
+								Fugit, iusto quasi. Dolor tempora
+							</p>
+						</div>
+						<div class="card">
+							<img
+								src="./images/wordpress.png"
+								alt="WordPress разработчик"
+								width="80"
+								height="80"
+							/>
+							<h4>WordPress Developer</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus, perferendis?
+								Fugit, iusto quasi. Dolor tempora
+							</p>
+						</div>
+						<div class="card">
+							<img
+								src="./images/app-development.png"
+								alt="разработка приложений"
+								width="80"
+								height="80"
+							/>
+							<h4>APP Development</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus, perferendis?
+								Fugit, iusto quasi. Dolor tempora
+							</p>
+						</div>
+						<div class="card">
+							<img
+								src="./images/business.png"
+								alt="бизнес стратегия"
+								width="80"
+								height="80"
+							/>
+							<h4>Business Strategy</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus, perferendis?
+								Fugit, iusto quasi. Dolor tempora
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="card-feedback">
-					<div class="portfolio-img">
-						<img src="./images/profile3.jpg" alt="обратная связь3" class="rounded" width="100"
-							height="100" />
+				<section class="experience-bg">
+					<div class="experience container">
+						<p class="one">My Resume</p>
+						<h2>10+ YEARS OF EXPERIENCE</h2>
+						<div class="section">
+							<div class="left">
+								<div class="dot"></div>
+								<h2>Education</h2>
+							</div>
+							<div class="section-card">
+								<div class="item">
+									<h3>BSc in Computer Science</h3>
+									<p>University of ULAV (2018 - 2022)</p>
+									<p>
+										Something weird, something
+										incomprehensible do not pay attention to
+										it.
+									</p>
+								</div>
+								<div class="item">
+									<h3>AS - Science & Information</h3>
+									<p>University of ULAV (2016 - 2018)</p>
+									<p>
+										Something weird, something
+										incomprehensible do not pay attention to
+										it.
+									</p>
+								</div>
+								<div class="item">
+									<h3>Secondary School Education</h3>
+									<p>Kindergarden (2006 - 2016)</p>
+									<p>
+										Something weird, something
+										incomprehensible do not pay attention to
+										it.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="left">
+								<div class="dot"></div>
+								<h2>Software Skills</h2>
+							</div>
+							<div class="section-card">
+								<div class="item">
+									<h3>UI/UX Design</h3>
+									<p>
+										Figma
+										----------------------------------90%<br />Adobe
+										XD -----------------------------85%<br />Photoshop
+										-----------------------------80%
+									</p>
+								</div>
+								<div class="item">
+									<h3>Web Developer</h3>
+									<p>
+										WordPress
+										-----------------------------90%<br />Mockplus
+										------------------------------85%<br />Weebly
+										---------------------------------80%
+									</p>
+								</div>
+								<div class="item">
+									<h3>App Development</h3>
+									<p>
+										Quixy
+										----------------------------------92%<br />AppyPie
+										-------------------------------87%<br />iBuildApp
+										-----------------------------82%
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="left">
+								<div class="dot"></div>
+								<h2>Experience</h2>
+							</div>
+							<div class="section-card">
+								<div class="item">
+									<h3>Web Developer & Trainer</h3>
+									<p>Brac Developer Team (2012 - 2016)</p>
+									<p>
+										Something weird, something
+										incomprehensible do not pay attention to
+										it.
+									</p>
+								</div>
+								<div class="item">
+									<h3>Front-end Developer</h3>
+									<p>Brane (2020 - 2021)</p>
+									<p>
+										Something weird, something
+										incomprehensible do not pay attention to
+										it.
+									</p>
+								</div>
+								<div class="item">
+									<h3>UI/UX Designer</h3>
+									<p>Google Out Tech (2017 - Present)</p>
+									<p>
+										Something weird, something
+										incomprehensible do not pay attention to
+										it.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="info">
-						<h4>Elithabet Brown</h4>
-						<p class="client">Director Techno</p>
-						<p class="under-text">
-							I highly recommend their services. From start
-							to finish, they were communicative, efficient,
-							and committed to delivering a top-notch product.
-							Their work has had a significant positive impact
-							on our business.
-						</p>
+				</section>
+				<div class="offer">
+					<p class="one">Testimonial</p>
+					<h2>CLIENT FEEDBACK</h2>
+					<div class="cards">
+						<div class="card1">
+							<div class="portfolioimg">
+								<img
+									src="./images/profile1.jpg"
+									alt="обратная связь"
+									class="rounded"
+									width="100"
+									height="100"
+								/>
+							</div>
+							<div class="info">
+								<h4>John K. Meraz</h4>
+								<p class="client">CEO, XYZ Group</p>
+								<p class="undertext">
+									dgghg iuhuo pokji fgjt gjib bddyb njuyrtf
+									mnlxdvvc nmfj bjgfdsv czhgujh jhgnlk. Lorem
+									ipsum dolor sit amet consectetur adipisicing
+									elit. Voluptatibus, perferendis? Fug
+								</p>
+							</div>
+						</div>
+						<div class="card1">
+							<div class="portfolioimg">
+								<img
+									src="./images/profile2.jpg"
+									alt="обратная связь2"
+									class="rounded"
+									width="100"
+									height="100"
+								/>
+							</div>
+							<div class="info">
+								<h4>Johan Smith</h4>
+								<p class="client">CEO, ABC Agency</p>
+								<p class="undertext">
+									dgghg iuhuo pokji fgjt gjib bddyb njuyrtf
+									mnlxdvvc nmfj bjgfdsv czhgujh jhgnlk. Lorem
+									ipsum dolor sit amet consectetur adipisicing
+									elit. Voluptatibus, perferendis? Fug
+								</p>
+							</div>
+						</div>
+						<div class="card1">
+							<div class="portfolioimg">
+								<img
+									src="./images/profile3.jpg"
+									alt="обратная связь3"
+									class="rounded"
+									width="100"
+									height="100"
+								/>
+							</div>
+							<div class="info">
+								<h4>Elithabet Brown</h4>
+								<p class="client">Director Techno</p>
+								<p class="undertext">
+									dgghg iuhuo pokji fgjt gjib bddyb njuyrtf
+									mnlxdvvc nmfj bjgfdsv czhgujh jhgnlk. Lorem
+									ipsum dolor sit amet consectetur adipisicing
+									elit. Voluptatibus, perferendis? Fug
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="visit-portfolio container" id="Portfolio">
-			<div class="offer">
-				<p class="one">My Portfolio</p>
-				<h2>VISIT MY PORTFOLIO</h2>
-				<div class="nav-head">
-					<nav>
-						<ul>
-							<li class="nav-item">
-								<a href="#">All</a>
-							</li>
-							<li class="nav-item">
-								<a href="#">UX/UI Design</a>
-							</li>
-							<li class="nav-item">
-								<a href="#">Branding Design</a>
-							</li>
-							<li class="nav-item">
-								<a href="#">Graffic Design</a>
-							</li>
-							<li class="nav-item">
-								<a href="#">APP Development</a>
-							</li>
-							<li class="nav-item">
-								<a href="#">Web Design</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+				<div class="visitportfolio container">
+					<div class="offer">
+						<p class="one">My Portfolio</p>
+						<h2>VISIT MY PORTFOLIO</h2>
+						<div class="nav-head">
+							<nav>
+								<ul>
+									<li class="nav-item"><a href="#">All</a></li>
+									<li class="nav-item"><a href="#">UX/UI Design</a></li>
+									<li class="nav-item"><a href="#">Branding Design</a></li>
+									<li class="nav-item"><a href="#">Branding Design</a></li>
+									<li class="nav-item"><a href="#">Graffic Design</a></li>
+									<li class="nav-item"><a href="#">APP Development</a></li>
+									<li class="nav-item"><a href="#">Web Design</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 
 			<div class="gallery">
 				<div class="img-1">
@@ -551,126 +615,282 @@
 						<img src="./images/img-three.jpg" alt="реклама блок3" class="latest-img" width="445"
 							height="400" />
 					</div>
-					<div class="latest">
-						<p class="client">13 January 2023</p>
-						<h4>
-							The Best Portfolio For Agency Design
-							Thinking
-						</h4>
-						<div class="latest-link">
-							<a href="">Read More→</a>
+					<div class="reputed-img">
+						<div class="p1">
+							<img
+								src="./images/partner-astra1.jpg"
+								alt="партнер1"
+								width="220"
+								height="150"
+							/>
+						</div>
+						<div class="p1">
+							<img
+								src="./images/partner-brainstorm.jpg"
+								alt="партнер2"
+								width="220"
+								height="150"
+							/>
+						</div>
+						<div class="p1">
+							<img
+								src="./images/partner-astra1.jpg"
+								alt="партнер3"
+								width="220"
+								height="150"
+							/>
+						</div>
+						<div class="p1">
+							<img
+								src="./images/partner-valentine's-day-.jpg"
+								alt="партнер4"
+								width="220"
+								height="150"
+							/>
+						</div>
+						<div class="p1">
+							<img
+								src="./images/partner-flower.jpg"
+								alt="партнер5"
+								width="220"
+								height="150"
+							/>
+						</div>
+						<div class="p1">
+							<img
+								src="./images/partner6.jpg"
+								alt="партнер6"
+								width="220"
+								height="150"
+							/>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="want-hear container" id="btn">
-			<div class="offer">
-				<p class="one">My Contact</p>
-				<h2>I WANT TO HEAR FROM YOU</h2>
-				<div class="contact-container">
-					<form>
-						<div class="contacts">
-							<input type="text" placeholder="Your Name" />
-							<input type="email" placeholder="Your Email" />
-							<input type="tel" placeholder="Your Phone" />
-							<input type="text" placeholder="Subject" />
-						</div>
-						<textarea placeholder="Message"></textarea>
-						<button class="btn">Send Me Message</button>
-					</form>
-					<div class="address">
-						<div class="addres">
-							<h3>📍Address</h3>
-							<div class="add">
-								202 Dog Hill Lane Belait,KS 67
+				<div class="latestblog container">
+					<div class="offer">
+						<p class="one">My Blog</p>
+						<h2>LATEST BLOG</h2>
+						<div class="latestcards">
+							<div class="latestcard">
+								<div class="imglate">
+									<img
+										src="./images/img-one.jpg"
+										alt="реклама блок1"
+										class="latestimg"
+										width="480"
+										height="450"
+									/>
+								</div>
+								<div class="latest">
+									<p class="client">22 January 2023</p>
+									<h4>
+										Become an UX/UI Designer With Career
+										Foundry
+									</h4>
+									<div class="latest-link">
+										<a href="">Read More→</a>
+									</div>
+								</div>
+							</div>
+							<div class="latestcard">
+								<div class="imglate">
+									<img
+										src="./images/img-two.jpg"
+										alt="реклама блок2"
+										class="latestimg"
+										width="480"
+										height="450"
+									/>
+								</div>
+								<div class="latest">
+									<p class="client">23 January 2023</p>
+									<h4>
+										The Best App Development For Your
+										Business Plan
+									</h4>
+									<div class="latest-link">
+										<a href="">Read More→</a>
+									</div>
+								</div>
+							</div>
+							<div class="latestcard">
+								<div class="imglate">
+									<img
+										src="./images/img-three.jpg"
+										alt="реклама блок3"
+										class="latestimg"
+										width="480"
+										height="450"
+									/>
+								</div>
+								<div class="latest">
+									<p class="client">13 January 2023</p>
+									<h4>
+										The Best Portfolio For Agency Design
+										Thinking
+									</h4>
+									<div class="latest-link">
+										<a href="">Read More→</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="number">
-							<h3>📞 Phone</h3>
-							<div class="numb">1-800-915-6270</div>
-							<div class="email">
-								<h3>Email</h3>
-								<div class="mail">
-									example@gmail.com
+					</div>
+					<!-- Курс валют -->
+					<section class="currency-module">
+						<h2>Курс валют</h2>
+						<table class="rates-table">
+							<thead>
+								<tr>
+						            <th>Валюта</th>
+							        <th>Покупка</th>
+									<th>Продажа</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<img src="https://alifwebsite.alif.tj/uploads/USD_8e9006c64f.svg" class="currency-icon" alt="USD">
+										1 USD </td>
+									<td>9.1500</td>
+									<td>9.2500</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="https://alifwebsite.alif.tj/uploads/RUB_75e4d884b7.svg" class="currency-icon" alt="RUB">
+										1 RUB</td>
+									<td>0.1130</td>
+									<td>0.1152</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="https://alifwebsite.alif.tj/uploads/EUR_fadb1556e2.svg" class="currency-icon" alt="eur">
+										1 EUR</td>
+								    <td>10.6000</td>
+								    <td>10.9000</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<div class="want-hear container">
+						<div class="offer">
+							<p class="one">My Contact</p>
+							<h2>I WANT TO HEAR FROM YOU</h2>
+							<div class="contact-container">
+								<form>
+									<div class="contacts">
+										<input
+											type="text"
+											placeholder="Your Name"
+										/>
+										<input
+											type="email"
+											placeholder="Your Email"
+										/>
+										<input
+											type="tel"
+											placeholder="Your Phone"
+										/>
+										<input
+											type="text"
+											placeholder="Subject"
+										/>
+									</div>
+									<textarea placeholder="Message"></textarea>
+									<button class="btn">Send Me Message</button>
+								</form>
+								<div class="address">
+									<div class="addres">
+										<h3>📍Address</h3>
+										<div class="add">
+											202 Dog Hill Lane Belait,KS 67420
+										</div>
+									</div>
+									<div class="number">
+										<h3>📞 Phone</h3>
+										<div class="numb">1-800-915-6270</div>
+										<div class="email">
+											<h3>Email</h3>
+											<div class="mail">
+												example@gmail.com
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		</div>
-	</main>
-	<footer>
-		<div class="container">
-			<div class="footer-content">
-				<div class="footer-about">
-					<div class="logo-foot logo">
-						<img src="./images/logo.jpg" alt="логотип футера" width="250" height="80" />
-						</a>
+			</main>
+			<footer>
+				<div class="container">
+					<div class="footer-content">
+						<div class="logo">
+							<div class="logofoot">
+								<img
+									src="./images/logo.jpg"
+									alt="логотип футера"
+									width="250"
+									height="80"
+								/>
+							</div>
+							<p class="footwrite">
+								Lorem ipsum dolor sit Nihil totam modi sed, amet
+								consectetur adipisicing elit. Quisquam, quod.
+								Lorem ipsum dolor sit, amet consectetur
+								adipisicing elit. Quisquam, quod.
+							</p>
+							<div class="mail">
+								<a href="example@gmail.com"
+									>example@gmail.com</a
+								>
+							</div>
+						</div>
+						<div class="footer-links">
+							<h3>Explore Link</h3>
+							<nav class="nav-foot">
+								<ul>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Resume</a></li>
+									<li><a href="#">Portfolio</a></li>
+									<li><a href="#">Blog</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer-links">
+							<h3>My Services</h3>
+							<nav class="nav-foot">
+								<ul>
+									<li><a href="#">UX/UI Design</a></li>
+									<li><a href="#">Mobile App</a></li>
+									<li><a href="#">Web Developer</a></li>
+									<li><a href="#">Graphic Design</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="follow-me">
+							<div class="footer-links">
+								<h3>Follow Me</h3>
+								<a href="maps"
+									>📍202 Dog Hill Lane Belait,KS 67420</a
+								>
+								<a href="tel:18009156270">📞 1-800-915-6270</a>
+							</div>
+						</div>
 					</div>
-					<p class="footwrite">
-						Bringing ideas to life through elegant
-						code and intuitive design.I specialize
-						in crafting responsive, user-friendly
-						interfaces that elevate digital experiences.
-					</p>
-					<div class="mail">
-						example@gmail.com
+					<div class="footer-bottom">
+						<p class="copy">
+							All right reserved © <span id="year"></span>
+						</p>
+						<div class="rights">
+							<a href="/terms.html">Terms & Condition</a>
+							<a href="#">Privacy Policy</a>
+						</div>
 					</div>
 				</div>
-
-				<div class="footer-links-above">
-					<div class="footer-links">
-						<h3>Explore Link</h3>
-						<nav class="nav-foot">
-							<ul>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Resume</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">Blog</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="footer-links">
-						<h3>My Services</h3>
-						<nav class="nav-foot">
-							<ul>
-								<li><a href="#">UX/UI Design</a></li>
-								<li><a href="#">Mobile App</a></li>
-								<li><a href="#">Web Developer</a></li>
-								<li><a href="#">Graphic Design</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="footer-links">
-						<h3>Follow Me</h3>
-						<nav class="nav-foot">
-							<ul>
-								<li>
-									<a href="maps">📍202 Dog Hill Lane Belait,KS 67</a>
-								</li>
-								<li>
-									<a href="tel:18009156270">📞 1-800-915-6270</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-			<div class="footer-bottom">
-				<p class="copy">
-					All right reserved © <span id="year"></span>
-				</p>
-				<div class="rights">
-					<a href="/terms.html">Terms & Condition</a>
-					<a href="/privacy-page.html">Privacy Policy</a>
-				</div>
-			</div>
+			</footer>
 		</div>
-	</footer>
-	<script src="./js/script.js"></script>
-</body>
-
+		<script src="./js/script.js"></script>
+	</body>
 </html>

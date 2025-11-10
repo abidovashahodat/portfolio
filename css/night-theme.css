@@ -1,0 +1,149 @@
+.night-theme-btn {
+	position: absolute;
+	right: 210px;
+	top: 40px;
+	border: none;
+	outline: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 15px;
+	background-color: rgba(167, 229, 253, 0.5);
+	cursor: pointer;
+	
+	overflow: hidden; 
+}
+.night-theme-btn:hover {
+	filter: brightness(100%);
+	transition: 0.4s;
+}
+.night-theme-btn:active {
+	filter: brightness(150%);
+}
+
+.night-theme-btn__icon_sun circle,
+.night-theme-btn__icon_sun path {
+	fill: rgb(255, 194, 79);
+}
+
+.night-theme-btn__icon_sun {
+	position: relative;
+	top: 5px;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.3s linear;
+}
+
+.night-theme-btn__icon_moon {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s, opacity 0.3s linear;
+}
+
+/* --- night theme--- */
+body,
+header,
+.card,
+.section-card,
+.card1,
+.experience-bg,
+form input,
+textarea,
+.currency-module {
+	transition: background-color 0.4s, color 0.4s;
+}
+
+body.night-theme {
+	background-color: #1a1a1a;
+	color: #e0e0e0;
+}
+
+/* icons */
+body.night-theme .night-theme-btn__icon_sun {
+	visibility: visible;
+	opacity: 1;
+}
+
+body.night-theme .night-theme-btn__icon_moon {
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* header */
+body.night-theme header,
+body.night-theme .mobile-menu {
+	background-color: #222;
+	border-bottom: 1px solid #444;
+}
+
+
+body.night-theme .nav-item a,
+body.night-theme .mobile-menu ul a,
+body.night-theme h1,
+body.night-theme h2,
+body.night-theme h3,
+body.night-theme h4 {
+	color: #f0f0f0;
+}
+body.night-theme p,
+body.night-theme .under-write,
+body.night-theme .item p {
+	color: #bbb;
+}
+
+/*  section */
+body.night-theme .experience-bg {
+	background-color: #2c3e50;
+}
+body.night-theme .first-bg {
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../images/one.jpg);
+}
+
+/* cards */
+body.night-theme .card {
+	background-color: #2a2a2a;
+	box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+body.night-theme .card:hover {
+	background-color: #333;
+}
+body.night-theme .section-card {
+	background: #2a2a2a;
+	box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+body.night-theme .card1 {
+	background-color: #2c3e50;
+}
+
+/* forms */
+body.night-theme form input,
+body.night-theme textarea {
+	background-color: #333;
+	color: #f0f0f0;
+	border: 1px solid #555;
+}
+body.night-theme input::placeholder,
+body.night-theme textarea::placeholder {
+	color: #888;
+}
+
+/* currency table*/
+body.night-theme .currency-module {
+	background-color: #2a2a2a;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+body.night-theme .currency-module h2,
+body.night-theme .rates-table td {
+	color: #f0f0f0;
+}
+body.night-theme .rates-table th {
+	color: #888;
+}
+body.night-theme .rates-table th,
+body.night-theme .rates-table td {
+	border-bottom: 1px solid #444;
+}
