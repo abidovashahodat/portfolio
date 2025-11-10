@@ -9,6 +9,101 @@ setYear();
 const featureSwitcher = false;
 
 if (featureSwitcher) {
+}
+
+const burgerBtn = document.getElementById("burger-btn");
+const closeBtn = document.getElementById("close-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+burgerBtn.addEventListener("click", () => {
+	mobileMenu.style.transform = "translateX(0)";
+});
+
+closeBtn.addEventListener("click", () => {
+	mobileMenu.style.transform = "translateX(-100%)";
+});
+
+document.addEventListener("click", function () {});
+
+const button = document.querySelector(".btn-contact");
+
+button.addEventListener("click", () => {
+	const target = document.querySelector("#btn");
+	target.scrollIntoView({ behavior: "smooth" });
+});
+document.addEventListener("click", function () {});
+
+
+
+const sidebarBtn = document.getElementById("feature");
+const closeBtnSidebar = document.getElementById("close-btn-sidebar");
+const Menu = document.getElementById("menu-features");
+
+sidebarBtn.addEventListener("click", () => {
+	Menu.style.transform = "translateX(0)";
+});
+
+closeBtnSidebar.addEventListener("click", () => {
+	Menu.style.transform = "translateX(-100%)";
+});
+
+document.addEventListener("click", function () {});
+
+
+
+const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+window.addEventListener("scroll", () => {
+	if (window.scrollY > 300) {
+		scrollUpBtn.classList.add("show");
+	} else {
+		scrollUpBtn.classList.remove("show");
+	}
+});
+
+scrollUpBtn.addEventListener("click", () => {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
+});
+
+const loader = document.getElementById("weather-loader");
+loader.style.display = "block";
+
+const apiKey = "db18181f25347943f635ac1773709b41";
+const city = "Dushanbe";
+const weatherEl = document.getElementById("weather");
+
+fetch(
+	`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+)
+	.then((res) => res.json())
+	.then((data) => {
+		const temp = Math.round(data.main.temp);
+		const main = data.weather[0].main;
+		let emoji = "☀️";
+
+		if (main === "Clouds") emoji = "☁️";
+		else if (main === "Rain") emoji = "🌧️";
+		else if (main === "Snow") emoji = "❄️";
+		else if (main === "Thunderstorm") emoji = "⛈️";
+		else if (main === "Drizzle") emoji = "🌦️";
+		else if (main === "Clear") emoji = "☀️";
+		else emoji = "🌤️";
+
+		weatherEl.textContent = `${emoji} ${temp}°C`;
+	})
+	.catch(() => {
+		weatherEl.textContent = "⚠️ Ошибка загрузки погоды";
+	})
+	.finally(() => {
+		loader.style.display = "none";
+	});
+
+
+
+function calc() {
 	// TODO
 	/* Нужно написать код для калькулятора, который будет проверять 
     значения первого числа на число, значение второго числа на число 

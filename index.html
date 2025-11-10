@@ -39,24 +39,33 @@
 					/>
 				</button>
 
-				<nav class="nav-head">
-					<ul>
-						<li class="nav-item"><a href="#">Home</a></li>
-						<li class="nav-item"><a href="#">About</a></li>
-						<li class="nav-item"><a href="#">Services</a></li>
-						<li class="nav-item"><a href="#">Portfolio</a></li>
-						<li class="nav-item"><a href="#">Resume</a></li>
-						<li class="nav-item"><a href="#">Blog</a></li>
-						<li class="nav-item"><a href="#">Testimonial</a></li>
-					</ul>
-				</nav>
-				<nav class="mobile-menu" id="mobile-menu">
-					<img
-						src="./images/logo.jpg"
-						alt="логотип"
-						width="120"
-						height="40"
-					/>
+<body>
+	<header>
+		<div class="container header">
+			<div class="head">
+				<a href="#Home">
+					<img src="./images/logo.jpg" alt="логотип" width="250" height="80" />
+				</a>
+			</div>
+			<button class="burger" id="burger-btn">
+				<img src="./images/burger.png" alt="burger" width="30" height="30" />
+			</button>
+
+			<nav class="nav-head">
+				<ul>
+					<li class="nav-item"><a href="#Home">Home</a></li>
+					<li class="nav-item"><a href="#About">About</a></li>
+					<li class="nav-item"><a href="#Services">Services</a></li>
+					<li class="nav-item"><a href="#Resume">Resume</a></li>
+					<li class="nav-item"><a href="#Testimonial">Testimonial</a></li>
+					<li class="nav-item"><a href="#Portfolio">Portfolio</a></li>
+					<li class="nav-item"><a href="#Partners">Partners</a></li>
+					<li class="nav-item"><a href="#Blog">Blog</a></li>
+				</ul>
+			</nav>
+			<nav class="mobile-menu" id="mobile-menu">
+				<div class="mobile-head">
+					<img src="./images/logo.jpg" alt="логотип" width="120" height="40" />
 					<button class="close-btn" id="close-btn">
 						<img src="./images/Vector.svg" alt="close" width="20" height="20" />
 					</button>
@@ -71,36 +80,75 @@
 					</ul>
 				</nav>
 				<button class="btn">Contact Us</button>
-			</header>
-			<main>
-				<div class="first-bg">
-					<div class="first container">
-						<div class="underheader">
-							<p class="one">I am a Frontend Developer</p>
-							<h1>
-								Creative Design and Web
-								<span class="solution">Solutions</span>
-							</h1>
-							<p class="under-write">
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Quisquam, quod. Lorem ipsum
-								dolor sit amet consectetur adipisicing elit.
-								Quisquam, quod. Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Quisquam, quod.
-								Quisquam, quod. Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Quisquam, q
-							</p>
-							<a href="#" download="" class="btn">Download my CV</a>
-						</div>
-						<div class="img-one">
-							<img
-								src="./images/first.jpg"
-								alt="фронтенд разработчик"
-								width="400"
-								height="350"
-							/>
-						</div>
-					</div>
+			</nav>
+			<button class="btn-contact">Contact Us</button>
+		</div>
+	<div id="weather-loader" class="loader"></div>
+			<div id="weather"></div>
+			<!-- <select id="task">
+				<option value="">Theme</option>
+				<option value="">Features</option>
+			</select> -->
+	</header>
+	<main>
+        <button class="features" id="feature">></button>
+		<nav class="menu" id="menu-features">
+				<div class="desktop-head">
+					<img src="./images/logo.jpg" alt="логотип" width="120" height="40" />
+					<button class="close-btn-sidebar" id="close-btn-sidebar">
+						<svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#eeeeee"
+							viewBox="0 0 24 24">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M6 18 17.94 6M18 18 6.06 6" />
+						</svg>
+					</button>
+				</div>
+
+				<ul>
+					<li class="nav-item"><a href="#Home">HOME</a></li>
+					<li class="nav-item"><a href="#btn">CONTACTS</a></li>
+					<li class="nav-item"><a href="#">FEATURES</a></li>
+					<li class="nav-item"><a href="terms.html">TERMS</a></li>
+					<li class="nav-item"><a href="privacy-page.html">PRIVACY & POLICY</a></li>
+				</ul>
+				<div class="languages">Languages</div>
+					<ul>
+					<li class="nav-item"><a href="index.html">English</a></li>
+					<li class="nav-item"><a href="ru.html">Russian</a></li>	
+					<li class="nav-item"><a href="tj.html">Tajik</a></li>
+					</ul>
+				
+				<span class="themes">Themes</span>
+					<select id="theme-select">
+						<option value="light">Light</option>
+						<option value="dark">Dark</option>
+					</select>
+			</nav>
+
+		<button class="roll-button" id="scrollUpBtn">
+			<img src="./images/arrow-up.png" alt="кнопка вверх" width="20" height="20" />
+		</button>
+		<div class="first-bg" id="Home">
+			<div class="first container">
+				<div class="underheader">
+					<p class="one">I am a Frontend Developer</p>
+					<h1>
+						Creative Design and Web
+						<span class="solution">Solutions</span>
+					</h1>
+					<p class="under-write">
+						I specialize in crafting visually stunning
+						and highly functional digital experiences.
+						By merging innovative design with robust
+						development, I build websites and applications
+						that not only capture attention but also deliver
+						seamless user experiences.
+					</p>
+					<a href="#" download="" class="btn">Download my CV</a>
+				</div>
+				<div>
+					<img src="./images/first.jpg" alt="фронтенд разработчик" width="400" height="350" />
 				</div>
 
 				<div class="about-me container">
@@ -469,79 +517,103 @@
 						</div>
 					</div>
 
-					<div class="gallery">
-						<div class="img-1">
-							<img
-								src="./images/img-1.jpg"
-								alt="img-1"
-								width="470"
-								height="450"
-							/>
-						</div>
-						<div class="img-2">
-							<img
-								src="./images/img-2.jpg"
-								alt="img-2"
-								width="470"
-								height="450"
-							/>
-						</div>
-						<div class="img-3">
-							<img
-								src="./images/img-3.jpg"
-								alt="img-3"
-								width="470"
-								height="450"
-							/>
-						</div>
-						<div class="img-4">
-							<img
-								src="./images/img-4.jpg"
-								alt="img-4"
-								width="470"
-								height="450"
-							/>
-						</div>
-						<div class="img-5">
-							<img
-								src="./images/img-5.jpg"
-								alt="img-5"
-								width="470"
-								height="450"
-							/>
-						</div>
-						<div class="img-6">
-							<img
-								src="./images/img-6.jpg"
-								alt="img-6"
-								width="470"
-								height="450"
-							/>
-						</div>
+			<div class="gallery">
+				<div class="img-1">
+					<img src="./images/gallery-1.jpg" alt="img-1" width="440" height="400" />
+				</div>
+				<div class="img-2">
+					<img src="./images/gallery-2.jpg" alt="img-2" width="440" height="400" />
+				</div>
+				<div class="img-3">
+					<img src="./images/gallery-3.jpg" alt="img-3" width="440" height="400" />
+				</div>
+				<div class="img-4">
+					<img src="./images/gallery-4.jpg" alt="img-4" width="440" height="400" />
+				</div>
+				<div class="img-5">
+					<img src="./images/gallery-5.jpg" alt="img-5" width="440" height="400" />
+				</div>
+				<div class="img-6">
+					<img src="./images/gallery-6.jpg" alt="img-6" width="440" height="400" />
+				</div>
+			</div>
+			<div class="gallery2">
+				<div class="img-7">
+					<img src="./images/gallery-7.jpg" alt="img-7" width="440" height="400" />
+				</div>
+				<div class="img-8">
+					<img src="./images/gallery-8.jpg" alt="img-8" width="895" height="400" />
+				</div>
+			</div>
+		</div>
+		<div class="reputed" id="Partners">
+			<div class="offer">
+				<p class="one">Partners</p>
+				<h2>REPUTED PARTNER</h2>
+			</div>
+			<div class="reputed-img">
+				<div class="p1">
+					<img src="./images/partner-astra1.jpg" alt="партнер1" width="200" height="150" />
+				</div>
+				<div class="p1">
+					<img src="./images/partner-brainstorm.jpg" alt="партнер2" width="200" height="150" />
+				</div>
+				<div class="p1">
+					<img src="./images/partner-astra1.jpg" alt="партнер3" width="200" height="150" />
+				</div>
+				<div class="p1">
+					<img src="./images/partner-valentine's-day-.jpg" alt="партнер4" width="200" height="150" />
+				</div>
+				<div class="p1">
+					<img src="./images/partner-brainstorm.jpg" alt="партнер5" width="200" height="150" />
+				</div>
+				<div class="p1">
+					<img src="./images/partner-valentine's-day-.jpg" alt="партнер6" width="200" height="150" />
+				</div>
+			</div>
+		</div>
+		<div class="latest-blog container" id="Blog">
+			<div class="offer">
+				<p class="one">My Blog</p>
+				<h2>LATEST BLOG</h2>
+			</div>
+			<div class="latest-cards">
+				<div class="latest-card">
+					<div class="img-late">
+						<img src="./images/img-one.jpg" alt="реклама блок1" class="latest-img" width="445"
+							height="400" />
 					</div>
-					<div class="gallery2">
-						<div class="img-7">
-							<img
-								src="./images/img-7.jpg"
-								alt="img-7"
-								width="470"
-								height="450"
-							/>
-						</div>
-						<div class="img-8">
-							<img
-								src="./images/img-8.jpg"
-								alt="img-8"
-								width="960"
-								height="450"
-							/>
+					<div class="latest">
+						<p class="client">22 January 2023</p>
+						<h4>
+							Become an UX/UI Designer With Career
+							Foundry
+						</h4>
+						<div class="latest-link">
+							<a href="">Read More→</a>
 						</div>
 					</div>
 				</div>
-				<div class="reputed">
-					<div class="offer">
-						<p class="one">Partners</p>
-						<h2>REPUTED PARTNER</h2>
+				<div class="latest-card">
+					<div class="img-late">
+						<img src="./images/gallery-9.jpg" alt="реклама блок2" class="latest-img" width="445"
+							height="400" />
+					</div>
+					<div class="latest">
+						<p class="client">23 January 2023</p>
+						<h4>
+							The Best App Development For Your
+							Business Plan
+						</h4>
+						<div class="latest-link">
+							<a href="">Read More→</a>
+						</div>
+					</div>
+				</div>
+				<div class="latest-card">
+					<div class="img-late">
+						<img src="./images/img-three.jpg" alt="реклама блок3" class="latest-img" width="445"
+							height="400" />
 					</div>
 					<div class="reputed-img">
 						<div class="p1">
