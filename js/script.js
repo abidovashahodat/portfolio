@@ -5,49 +5,27 @@ function setYear() {
 
 setYear();
 
-// Calculator
-const featureSwitcher = false;
 
-if (featureSwitcher) {
+function toggleMenu(menuId, openBtnId, closeBtnId) {
+	const menu = document.getElementById(menuId);
+	const openBtn = document.getElementById(openBtnId);
+	const closeBtn = document.getElementById(closeBtnId);
+
+	openBtn.addEventListener("click", () => {
+		menu.style.transform = "translateX(0)";
+	});
+
+	closeBtn.addEventListener("click", () => {
+		menu.style.transform = "translateX(-100%)";
+	});
 }
 
-const burgerBtn = document.getElementById("burger-btn");
-const closeBtn = document.getElementById("close-btn");
-const mobileMenu = document.getElementById("mobile-menu");
 
-burgerBtn.addEventListener("click", () => {
-	mobileMenu.style.transform = "translateX(0)";
-});
-
-closeBtn.addEventListener("click", () => {
-	mobileMenu.style.transform = "translateX(-100%)";
-});
-
-document.addEventListener("click", function () {});
-
-const button = document.querySelector(".btn-contact");
-
-button.addEventListener("click", () => {
-	const target = document.querySelector("#btn");
-	target.scrollIntoView({ behavior: "smooth" });
-});
-document.addEventListener("click", function () {});
+   toggleMenu("menu-features", "feature", "close-btn-sidebar");
 
 
+   toggleMenu("mobile-menu", "burger-btn", "close-btn");
 
-const sidebarBtn = document.getElementById("feature");
-const closeBtnSidebar = document.getElementById("close-btn-sidebar");
-const Menu = document.getElementById("menu-features");
-
-sidebarBtn.addEventListener("click", () => {
-	Menu.style.transform = "translateX(0)";
-});
-
-closeBtnSidebar.addEventListener("click", () => {
-	Menu.style.transform = "translateX(-100%)";
-});
-
-document.addEventListener("click", function () {});
 
 
 
@@ -151,20 +129,6 @@ function calc() {
 			break;
 	}
 }
-
-const burgerBtn = document.getElementById("burger-btn");
-const closeBtn = document.getElementById("close-btn");
-const mobileMenu = document.getElementById("mobile-menu");
-
-burgerBtn.addEventListener("click", function () {
-	mobileMenu.style.transform = "translateX(0)";
-});
-
-closeBtn.addEventListener("click", function () {
-	mobileMenu.style.transform = "translateX(-100%)";
-});
-
-document.addEventListener("click", function () {});
 
 
 
