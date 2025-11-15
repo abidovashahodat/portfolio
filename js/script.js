@@ -7,36 +7,27 @@ function setYear() {
 setYear();
 
 
-const featureSwitcher = false;
-if (featureSwitcher) {
-	
-}
+function toggleMenu(menuId, openBtnId, closeBtnId) {
+	const menu = document.getElementById(menuId);
+	const openBtn = document.getElementById(openBtnId);
+	const closeBtn = document.getElementById(closeBtnId);
 
-
-const burgerBtn = document.getElementById("burger-btn");
-const closeBtn = document.getElementById("close-btn");
-const mobileMenu = document.getElementById("mobile-menu");
-
-if (burgerBtn && closeBtn && mobileMenu) {
-	burgerBtn.addEventListener("click", () => {
-		mobileMenu.style.transform = "translateX(0)";
+	openBtn.addEventListener("click", () => {
+		menu.style.transform = "translateX(0)";
 	});
 
 	closeBtn.addEventListener("click", () => {
-		mobileMenu.style.transform = "translateX(-100%)";
+		menu.style.transform = "translateX(-100%)";
 	});
 }
 
 
-const button = document.querySelector(".btn-contact");
-if (button) {
-	button.addEventListener("click", () => {
-		const target = document.querySelector("#btn");
-		if (target) {
-			target.scrollIntoView({ behavior: "smooth" });
-		}
-	});
-}
+   toggleMenu("menu-features", "feature", "close-btn-sidebar");
+
+
+   toggleMenu("mobile-menu", "burger-btn", "close-btn");
+
+
 
 
 const scrollUpBtn = document.getElementById("scrollUpBtn");
@@ -135,6 +126,7 @@ function calc() {
 			break;
 	}
 }
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
