@@ -1,4 +1,4 @@
-.nav-head ul {
+.nav-head ul ,.nav-gallery ul {
 	list-style: none;
 	display: flex;
 	gap: 20px;
@@ -7,6 +7,13 @@
 	font-size: 16pt;
 	font-weight: 900;
 }
+
+.nav-gallery ul li a {
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s ease;
+}
+  
 
 html {
 	scroll-behavior: smooth;
@@ -51,6 +58,8 @@ html {
   position: fixed;
   top: 5px;
   width: 20px;
+  left: 0px;
+  
 }
 
 .loader {
@@ -63,6 +72,7 @@ html {
   margin: 20px auto; 
   position: absolute; 
   top: 5px;
+  left: 0px;
   
 
 }
@@ -92,7 +102,7 @@ html {
 	background-image: url(../images/one.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%;
+	/* width: 100%; */
 }
 
 .underheader {
@@ -106,8 +116,8 @@ html {
 }
 
 h1 {
-	font-size: 93px;
-	margin-top: 5px;
+	font-size: 5rem;
+	margin-top: 2rem;
 	width: 90%;
 }
 
@@ -297,6 +307,11 @@ h2 {
 	margin-top: 100px;
 	text-align: center;
 }
+
+
+.gallery-container{
+
+display: none;}
 
 .img-1 {
 	grid-area: img1;

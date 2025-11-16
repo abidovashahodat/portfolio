@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,"/>
 	<title>Portfolio Website</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,25 +13,19 @@
 	<link rel="stylesheet" href="./css/styles.css" />
 	<link rel="stylesheet" href="./css/night-theme.css" />
 </head>
-
-<body>
-	<div>
-		<header class="container header">
-			<button class="night-theme-btn">
-				<svg class="night-theme-btn__icon night-theme-btn__icon_sun" viewBox="0 0 24 24"><title>Sun-fill SVG Icon</title><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10"/><path fill="currentColor" fill-rule="evenodd" d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1M3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414m17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0M1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1m19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1M6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0m11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1" clip-rule="evenodd"/></svg>
-				<svg class="night-theme-btn__icon night-theme-btn__icon_moon" viewBox="0 0 24 24"><title>Moon-fill SVG Icon</title><path fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3"/></svg>
-			</button>
+   <body>
+	   <header>
+		<div class="container header">
 			<div class="head">
 				<a href="#Home">
 					<img src="./images/logo.jpg" alt="логотип" width="250" height="80" />
 				</a>
-			</div>
+				<div id="weather-loader" class="loader"></div>
+			<div id="weather"></div>
+				</div>
 			<button class="burger" id="burger-btn">
 				<img src="./images/burger.png" alt="burger" width="30" height="30" />
 			</button>
-			<div id="weather-loader" class="loader"></div>
-			<div id="weather"></div>
-
 			<nav class="nav-head">
 				<ul>
 					<li class="nav-item"><a href="#Home">Home</a></li>
@@ -57,6 +51,7 @@
 					</button>
 				</div>
 				<ul>
+					<li class="nav-item"><a href="#">FEATURES</a></li>
 					<li class="nav-item"><a href="#Home">HOME</a></li>
 					<li class="nav-item"><a href="#About">ABOUT</a></li>
 					<li class="nav-item"><a href="#Services">SERVICES</a></li>
@@ -65,12 +60,68 @@
 					<li class="nav-item"><a href="#Blog">BLOG</a></li>
 					<li class="nav-item"><a href="#Testimonial">TESTIMONIAL</a></li>
 				</ul>
+				<div class="language-container">
+				<span class="language">Languages:</span>
+				<select id="language-select">
+                 <option value="index.html">English</option>
+                 <option value="ru.html">Русский</option>
+                 <option value="tj.html">Тоҷикӣ</option>
+                </select>
+				</div>
+				<div class="theme-text">
+				<span class="themes">Themes:</span>
+				<button class="night-theme-btn">
+				<svg class="night-theme-btn__icon night-theme-btn__icon_sun" viewBox="0 0 24 24"><title>Sun-fill SVG Icon</title><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10"/><path fill="currentColor" fill-rule="evenodd" d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1M3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414m17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0M1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1m19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1M6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0m11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1" clip-rule="evenodd"/></svg>
+				<svg class="night-theme-btn__icon night-theme-btn__icon_moon" viewBox="0 0 24 24"><title>Moon-fill SVG Icon</title><path fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3"/></svg>
+			</button>
+			    </div>
 				<button class="btn">Contact Us</button>
 			</nav>
 			<button class="btn-contact">Contact Us</button>
 		</div>
+		
+
 	</header>
 	<main>
+		<button class="features" id="feature">></button>
+		<nav class="menu" id="menu-features">
+				<div class="desktop-head">
+					<img src="./images/logo.jpg" alt="логотип" width="120" height="40" />
+					<button class="close-btn-sidebar" id="close-btn-sidebar">
+						<svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#eeeeee"
+							viewBox="0 0 24 24">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M6 18 17.94 6M18 18 6.06 6" />
+						</svg>
+					</button>
+				</div>
+
+				<ul>
+					<li class="nav-item"><a href="#Home">HOME</a></li>
+					<li class="nav-item"><a href="#btn">CONTACTS</a></li>
+					<li class="nav-item"><a href="#">FEATURES</a></li>
+					<li class="nav-item"><a href="terms.html">TERMS & CONDITION</a></li>
+					<li class="nav-item"><a href="privacy-page.html">PRIVACY POLICY</a></li>
+				</ul>
+				<div class="languages">Languages:</div>
+					<ul>
+					<li class="nav-item"><a href="index.html">English</a></li>
+					<li class="nav-item"><a href="ru.html">Russian</a></li>	
+					<li class="nav-item"><a href="tj.html">Tajik</a></li>
+					</ul>
+				<div class="theme-text">
+				<span class="themes">Themes:</span>
+				<button class="night-theme-btn">
+				<svg class="night-theme-btn__icon night-theme-btn__icon_sun" viewBox="0 0 24 24"><title>Sun-fill SVG Icon</title><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10"/><path fill="currentColor" fill-rule="evenodd" d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1M3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414m17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0M1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1m19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1M6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0m11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1" clip-rule="evenodd"/></svg>
+				<svg class="night-theme-btn__icon night-theme-btn__icon_moon" viewBox="0 0 24 24"><title>Moon-fill SVG Icon</title><path fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3"/></svg>
+			</button>
+			    </div>
+					<!-- <select id="theme-select">
+						<option value="light">light</option>
+						<option value="dark">Dark</option>
+					</select> -->
+			</nav>
 		<button class="roll-button" id="scrollUpBtn">
 			<img src="./images/arrow-up.png" alt="кнопка вверх" width="20" height="20" />
 		</button>
@@ -100,7 +151,7 @@
 
 		<div class="about-me container" id="About">
 			<div class="about-img">
-				<img src="./images/about-me.jpg" alt="обо мне" width="600" height="800" />
+				<img src="./images/about.jpg" alt="обо мне" width="540" height="700" />
 			</div>
 			<div class="about-content">
 				<p class="one">About Me</p>
@@ -269,7 +320,9 @@
 				<div class="section">
 					<div class="left">
 						<div class="dot"></div>
-						<h2>Software Skills</h2>
+						<div class="software-title">
+						<h2>Softwares</h2>
+						</div>
 					</div>
 					<div class="section-card">
 						<div class="item">
@@ -393,7 +446,7 @@
 			<div class="offer">
 				<p class="one">My Portfolio</p>
 				<h2>VISIT MY PORTFOLIO</h2>
-				<div class="nav-head">
+				<div class="nav-gallery">
 					<nav>
 						<ul>
 							<li class="nav-item">
@@ -418,35 +471,60 @@
 					</nav>
 				</div>
 			</div>
-
 			<div class="gallery">
-				<div class="img-1">
+				<div class="img-1 gallery-scroll" >
 					<img src="./images/gallery-1.jpg" alt="img-1" width="450" height="400" />
 				</div>
-				<div class="img-2">
+				<div class="img-2 gallery-scroll">
 					<img src="./images/gallery-2.jpg" alt="img-2" width="450" height="400" />
 				</div>
-				<div class="img-3">
+				<div class="img-3 gallery-scroll">
 					<img src="./images/gallery-3.jpg" alt="img-3" width="450" height="400" />
 				</div>
-				<div class="img-4">
+				<div class="img-4 gallery-scroll">
 					<img src="./images/gallery-4.jpg" alt="img-4" width="450" height="400" />
 				</div>
-				<div class="img-5">
+				<div class="img-5 gallery-scroll">
 					<img src="./images/gallery-5.jpg" alt="img-5" width="450" height="400" />
 				</div>
-				<div class="img-6">
+				<div class="img-6 gallery-scroll">
 					<img src="./images/gallery-6.jpg" alt="img-6" width="450" height="400" />
 				</div>
 			</div>
 			<div class="gallery2">
-				<div class="img-7">
+				<div class="img-7 gallery-scroll">
 					<img src="./images/gallery-7.jpg" alt="img-7" width="450" height="400" />
 				</div>
-				<div class="img-8">
+				<div class="img-8 gallery-scroll">
 					<img src="./images/gallery-8.jpg" alt="img-8" width="918" height="400" />
 				</div>
 			</div>
+		 <div class="gallery-container">
+				<div class="img-1 gallery-scroll" >
+					<img src="./images/gallery-1.jpg" alt="img-1" width="450" height="400" />
+				</div>
+				<div class="img-2 gallery-scroll">
+					<img src="./images/gallery-2.jpg" alt="img-2" width="450" height="400" />
+				</div>
+				<div class="img-3 gallery-scroll">
+					<img src="./images/gallery-3.jpg" alt="img-3" width="450" height="400" />
+				</div>
+				<div class="img-4 gallery-scroll">
+					<img src="./images/gallery-4.jpg" alt="img-4" width="450" height="400" />
+				</div>
+				<div class="img-5 gallery-scroll">
+					<img src="./images/gallery-5.jpg" alt="img-5" width="450" height="400" />
+				</div>
+				<div class="img-6 gallery-scroll">
+					<img src="./images/gallery-6.jpg" alt="img-6" width="450" height="400" />
+				</div>
+				<div class="img-7 gallery-scroll">
+					<img src="./images/gallery-7.jpg" alt="img-7" width="450" height="400" />
+				</div>
+				<div class="img-8 gallery-scroll">
+					<img src="./images/gallery-8.jpg" alt="img-8" width="918" height="400" />
+				</div>
+		 </div>
 		</div>
 		<div class="reputed" id="Partners">
 			<div class="offer">
@@ -454,7 +532,7 @@
 				<h2>REPUTED PARTNER</h2>
 			</div>
 			<div class="reputed-img">
-				<div class="p1">
+				<div class="p1 ">
 					<img src="./images/partner-astra1.jpg" alt="партнер1" width="200" height="150" />
 				</div>
 				<div class="p1">

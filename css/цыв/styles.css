@@ -1,0 +1,22 @@
+.cards-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Горизонтальная прокрутка */
+  padding: 20px;
+  scroll-snap-type: x mandatory; /* Красивое "прилипание" карточек */
+}
+
+.card {
+  flex: 0 0 auto; /* Чтобы ширина не растягивалась */
+  width: 250px;
+  height: 180px;
+  scroll-snap-align: start; /* Карточки прилипают по центру */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+

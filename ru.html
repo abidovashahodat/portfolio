@@ -11,6 +11,7 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/night-theme.css" />
 </head>
 
 <body>
@@ -58,6 +59,21 @@
                     <li class="nav-item"><a href="#Blog">БЛОГ</a></li>
                     <li class="nav-item"><a href="#Testimonial">ОТЗЫВЫ</a></li>
                 </ul>
+                <div class="language-container">
+				<span class="language">Языки:</span>
+				<select id="language-select">
+                 <option value="index.html">English</option>
+                 <option value="ru.html">Русский</option>
+                 <option value="tj.html">Тоҷикӣ</option>
+                </select>
+				</div>
+				<div class="theme-text">
+				<span class="themes">Тема:</span>
+				<button class="night-theme-btn">
+				<svg class="night-theme-btn__icon night-theme-btn__icon_sun" viewBox="0 0 24 24"><title>Sun-fill SVG Icon</title><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10"/><path fill="currentColor" fill-rule="evenodd" d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1M3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414m17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0M1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1m19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1M6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0m11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1" clip-rule="evenodd"/></svg>
+				<svg class="night-theme-btn__icon night-theme-btn__icon_moon" viewBox="0 0 24 24"><title>Moon-fill SVG Icon</title><path fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3"/></svg>
+			</button>
+			    </div>
                 <button class="btn">Связаться</button>
             </nav>
             <button class="btn-contact">Связаться</button>
@@ -87,18 +103,20 @@
 					<li class="nav-item"><a href="terms.html">ПРАВИЛА И УСЛОВИЯ</a></li>
 					<li class="nav-item"><a href="privacy-page.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
 				</ul>
-				<div class="languages">Languages</div>
+				<div class="languages">Языки:</div>
 					<ul>
-					<li class="nav-item"><a href="index.html">АНГЛИЙСКИЙ</a></li>
-					<li class="nav-item"><a href="ru.html">РУССКИЙ</a></li>	
-					<li class="nav-item"><a href="tj.html">ТАДЖИИКСКИЙ</a></li>
+					<li class="nav-item"><a href="index.html">Английский</a></li>
+					<li class="nav-item"><a href="ru.html">Русский</a></li>	
+					<li class="nav-item"><a href="tj.html">Таджикский</a></li>
 					</ul>
-				
-				<span class="themes">ТЕМА</span>
-					<select id="theme-select">
-						<option value="light">СВЕТЛАЯ</option>
-						<option value="dark">ТЕМНАЯ</option>
-					</select>
+				<div class="theme-text">
+				<span class="themes">Themes:</span>
+				<button class="night-theme-btn">
+				<svg class="night-theme-btn__icon night-theme-btn__icon_sun" viewBox="0 0 24 24"><title>Sun-fill SVG Icon</title><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10"/><path fill="currentColor" fill-rule="evenodd" d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1M3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414m17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0M1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1m19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1M6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0m11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1" clip-rule="evenodd"/></svg>
+				<svg class="night-theme-btn__icon night-theme-btn__icon_moon" viewBox="0 0 24 24"><title>Moon-fill SVG Icon</title><path fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3"/></svg>
+			</button>
+			    </div>
+					
 			</nav>
         <button class="roll-button" id="scrollUpBtn">
             <img src="./images/arrow-up.png" alt="кнопка вверх" width="20" height="20" />
@@ -417,7 +435,7 @@
             <div class="offer">
                 <p class="one">Мое портфолио</p>
                 <h2>ПОСЕТИТЕ МОЕ ПОРТФОЛИО</h2>
-                <div class="nav-head">
+                <div class="nav-gallery">
                     <nav>
                         <ul>
                             <li class="nav-item">
@@ -471,6 +489,32 @@
                     <img src="./images/gallery-8.jpg" alt="img-8" width="918" height="400" />
                 </div>
             </div>
+             <div class="gallery-container">
+				<div class="img-1 gallery-scroll" >
+					<img src="./images/gallery-1.jpg" alt="img-1" width="450" height="400" />
+				</div>
+				<div class="img-2 gallery-scroll">
+					<img src="./images/gallery-2.jpg" alt="img-2" width="450" height="400" />
+				</div>
+				<div class="img-3 gallery-scroll">
+					<img src="./images/gallery-3.jpg" alt="img-3" width="450" height="400" />
+				</div>
+				<div class="img-4 gallery-scroll">
+					<img src="./images/gallery-4.jpg" alt="img-4" width="450" height="400" />
+				</div>
+				<div class="img-5 gallery-scroll">
+					<img src="./images/gallery-5.jpg" alt="img-5" width="450" height="400" />
+				</div>
+				<div class="img-6 gallery-scroll">
+					<img src="./images/gallery-6.jpg" alt="img-6" width="450" height="400" />
+				</div>
+				<div class="img-7 gallery-scroll">
+					<img src="./images/gallery-7.jpg" alt="img-7" width="450" height="400" />
+				</div>
+				<div class="img-8 gallery-scroll">
+					<img src="./images/gallery-8.jpg" alt="img-8" width="918" height="400" />
+				</div>
+		 </div>
         </div>
         <div class="reputed" id="Partners">
             <div class="offer">
