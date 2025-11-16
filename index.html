@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,"/>
 	<title>Portfolio Website</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,21 +11,21 @@
 		rel="stylesheet" />
 	<link rel="stylesheet" href="./css/main.css" />
 	<link rel="stylesheet" href="./css/styles.css" />
+	<link rel="stylesheet" href="./css/night-theme.css" />
 </head>
-
-<body>
-	<header>
+   <body>
+	   <header>
 		<div class="container header">
-		<div class="mobile-logo-menu">
 			<div class="head">
 				<a href="#Home">
 					<img src="./images/logo.jpg" alt="логотип" width="250" height="80" />
 				</a>
-			</div>
+				<div id="weather-loader" class="loader"></div>
+			<div id="weather"></div>
+				</div>
 			<button class="burger" id="burger-btn">
 				<img src="./images/burger.png" alt="burger" width="30" height="30" />
 			</button>
-		</div>
 			<nav class="nav-head">
 				<ul>
 					<li class="nav-item"><a href="#Home">Home</a></li>
@@ -51,6 +51,7 @@
 					</button>
 				</div>
 				<ul>
+					<li class="nav-item"><a href="#">FEATURES</a></li>
 					<li class="nav-item"><a href="#Home">HOME</a></li>
 					<li class="nav-item"><a href="#About">ABOUT</a></li>
 					<li class="nav-item"><a href="#Services">SERVICES</a></li>
@@ -59,12 +60,26 @@
 					<li class="nav-item"><a href="#Blog">BLOG</a></li>
 					<li class="nav-item"><a href="#Testimonial">TESTIMONIAL</a></li>
 				</ul>
+				<div class="language-container">
+				<span class="language">Languages:</span>
+				<select id="language-select">
+                 <option value="index.html">English</option>
+                 <option value="ru.html">Русский</option>
+                 <option value="tj.html">Тоҷикӣ</option>
+                </select>
+				</div>
+				<div class="theme-text">
+				<span class="themes">Themes:</span>
+				<button class="night-theme-btn">
+				<svg class="night-theme-btn__icon night-theme-btn__icon_sun" viewBox="0 0 24 24"><title>Sun-fill SVG Icon</title><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10"/><path fill="currentColor" fill-rule="evenodd" d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1M3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414m17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0M1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1m19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1M6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0m11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1" clip-rule="evenodd"/></svg>
+				<svg class="night-theme-btn__icon night-theme-btn__icon_moon" viewBox="0 0 24 24"><title>Moon-fill SVG Icon</title><path fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3"/></svg>
+			</button>
+			    </div>
 				<button class="btn">Contact Us</button>
 			</nav>
 			<button class="btn-contact">Contact Us</button>
 		</div>
-		<div id="weather-loader" class="loader"></div>
-			<div id="weather"></div>
+		
 
 	</header>
 	<main>
@@ -95,12 +110,17 @@
 					<li class="nav-item"><a href="ru.html">Russian</a></li>	
 					<li class="nav-item"><a href="tj.html">Tajik</a></li>
 					</ul>
-				
-				<span class="themes">Themes</span>
-					<select id="theme-select">
+				<div class="theme-text">
+				<span class="themes">Themes:</span>
+				<button class="night-theme-btn">
+				<svg class="night-theme-btn__icon night-theme-btn__icon_sun" viewBox="0 0 24 24"><title>Sun-fill SVG Icon</title><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10"/><path fill="currentColor" fill-rule="evenodd" d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1M3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414m17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0M1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1m19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1M6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0m11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1" clip-rule="evenodd"/></svg>
+				<svg class="night-theme-btn__icon night-theme-btn__icon_moon" viewBox="0 0 24 24"><title>Moon-fill SVG Icon</title><path fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3"/></svg>
+			</button>
+			    </div>
+					<!-- <select id="theme-select">
 						<option value="light">light</option>
 						<option value="dark">Dark</option>
-					</select>
+					</select> -->
 			</nav>
 		<button class="roll-button" id="scrollUpBtn">
 			<img src="./images/arrow-up.png" alt="кнопка вверх" width="20" height="20" />

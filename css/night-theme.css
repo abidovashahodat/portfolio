@@ -1,7 +1,13 @@
+.theme-text {
+	position: relative;
+}
+
+
+
 .night-theme-btn {
 	position: absolute;
-	right: 210px;
-	top: 40px;
+	right: 125px;
+	bottom: -10px;
 	border: none;
 	outline: none;
 	width: 50px;
@@ -12,6 +18,8 @@
 	
 	overflow: hidden; 
 }
+
+
 .night-theme-btn:hover {
 	filter: brightness(100%);
 	transition: 0.4s;
@@ -27,7 +35,7 @@
 
 .night-theme-btn__icon_sun {
 	position: relative;
-	top: 5px;
+
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s, opacity 0.3s linear;
@@ -58,6 +66,14 @@ textarea,
 body.night-theme {
 	background-color: #1a1a1a;
 	color: #e0e0e0;
+}
+
+body.night-theme .menu {
+	background-color: #1f212f;
+}
+
+body.night-theme .card-feedback {
+	background-color: #1f212f;
 }
 
 /* icons */
@@ -95,11 +111,11 @@ body.night-theme .item p {
 
 /*  section */
 body.night-theme .experience-bg {
-	background-color: #2c3e50;
+	background-color: #1f212f;
 }
 body.night-theme .first-bg {
 
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	background-image: linear-gradient(#1f212f, #222) ,
 		url(../images/one.jpg);
 }
 
@@ -129,21 +145,4 @@ body.night-theme textarea {
 body.night-theme input::placeholder,
 body.night-theme textarea::placeholder {
 	color: #888;
-}
-
-/* currency table*/
-body.night-theme .currency-module {
-	background-color: #2a2a2a;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-body.night-theme .currency-module h2,
-body.night-theme .rates-table td {
-	color: #f0f0f0;
-}
-body.night-theme .rates-table th {
-	color: #888;
-}
-body.night-theme .rates-table th,
-body.night-theme .rates-table td {
-	border-bottom: 1px solid #444;
 }
