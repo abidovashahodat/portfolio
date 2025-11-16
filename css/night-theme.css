@@ -15,7 +15,7 @@
 	border-radius: 15px;
 	background-color: rgba(167, 229, 253, 0.5);
 	cursor: pointer;
-	
+	z-index: 10000;
 	overflow: hidden; 
 }
 
@@ -36,8 +36,8 @@
 .night-theme-btn__icon_sun {
 	position: relative;
 
-	visibility: hidden;
-	opacity: 0;
+	visibility: visible;
+	opacity: 1;
 	transition: visibility 0s, opacity 0.3s linear;
 }
 
@@ -45,8 +45,8 @@
 	position: absolute;
 	top: 1px;
 	right: 1px;
-	visibility: visible;
-	opacity: 1;
+	visibility: hidden;
+	opacity: 0;
 	transition: visibility 0s, opacity 0.3s linear;
 }
 

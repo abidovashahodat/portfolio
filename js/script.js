@@ -142,10 +142,43 @@ buttons.forEach(btn => {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-	const themeBtn = document.querySelector('.night-theme-btn');
+// document.addEventListener('DOMContentLoaded', () => {
+// 	const themeBtn = document.querySelectorAll('.night-theme-btn');
 
-	if (themeBtn) {
+// 	if (themeBtn) {
+
+// 		const applyTheme = (theme) => {
+// 			if (theme === 'night') {
+// 				document.body.classList.add('night-theme');
+// 			} else {
+// 				document.body.classList.remove('night-theme');
+// 			}
+// 		};
+
+	
+// 		const savedTheme = localStorage.getItem('theme') || 'light';
+// 		applyTheme(savedTheme);
+
+	
+// 		themeBtn.addEventListener('click', () => {
+// 			if (document.body.classList.contains('night-theme')) {
+				
+// 				document.body.classList.remove('night-theme');
+// 				localStorage.setItem('theme', 'light');
+// 			} else {
+				
+// 				document.body.classList.add('night-theme');
+// 				localStorage.setItem('theme', 'night');
+// 			}
+// 		});
+// 	}
+// });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+	const themeBtns = document.querySelectorAll('.night-theme-btn'); // NodeList всех кнопок
+
+	if (themeBtns.length > 0) {
 
 		const applyTheme = (theme) => {
 			if (theme === 'night') {
@@ -155,21 +188,20 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		};
 
-	
 		const savedTheme = localStorage.getItem('theme') || 'light';
 		applyTheme(savedTheme);
 
-	
-		themeBtn.addEventListener('click', () => {
-			if (document.body.classList.contains('night-theme')) {
-				
-				document.body.classList.remove('night-theme');
-				localStorage.setItem('theme', 'light');
-			} else {
-				
-				document.body.classList.add('night-theme');
-				localStorage.setItem('theme', 'night');
-			}
+		// Навешиваем обработчик на каждую кнопку
+		themeBtns.forEach(themeBtn => {
+			themeBtn.addEventListener('click', () => {
+				if (document.body.classList.contains('night-theme')) {
+					document.body.classList.remove('night-theme');
+					localStorage.setItem('theme', 'light');
+				} else {
+					document.body.classList.add('night-theme');
+					localStorage.setItem('theme', 'night');
+				}
+			});
 		});
 	}
 });
