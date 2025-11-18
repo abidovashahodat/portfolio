@@ -146,3 +146,7 @@ body.night-theme input::placeholder,
 body.night-theme textarea::placeholder {
 	color: #888;
 }
+
+body.night-theme #burger-btn {
+	filter: invert(100%);
+}
