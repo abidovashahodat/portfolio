@@ -176,7 +176,7 @@ buttons.forEach(btn => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-	const themeBtns = document.querySelectorAll('.night-theme-btn'); // NodeList всех кнопок
+	const themeBtns = document.querySelectorAll('.night-theme-btn'); 
 
 	if (themeBtns.length > 0) {
 
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const savedTheme = localStorage.getItem('theme') || 'light';
 		applyTheme(savedTheme);
 
-		// Навешиваем обработчик на каждую кнопку
+
 		themeBtns.forEach(themeBtn => {
 			themeBtn.addEventListener('click', () => {
 				if (document.body.classList.contains('night-theme')) {
