@@ -139,6 +139,79 @@ buttons.forEach(btn => {
     btn.addEventListener("click", scrollToBtn);
 });
 
+// Contact Form Submission Handler
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.querySelector('form');
+    const submitBtn = document.querySelector('.btn-submit');
+
+    if (contactForm && submitBtn) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Disable button and show loading state
+            submitBtn.disabled = true;
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = '⏳ Sending...';
+
+            try {
+                // Get form data
+                const inputs = contactForm.querySelectorAll('input');
+                const textarea = contactForm.querySelector('textarea');
+
+                const formData = {
+                    name: inputs[0].value.trim(),
+                    email: inputs[1].value.trim(),
+                    phone: inputs[2].value.trim(),
+                    subject: inputs[3].value.trim(),
+                    message: textarea.value.trim()
+                };
+
+                // Validate required fields
+                if (!formData.name || !formData.email || !formData.message) {
+                    throw new Error('Please fill in all required fields: Name, Email, and Message');
+                }
+
+                // Validate email format
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(formData.email)) {
+                    throw new Error('Please enter a valid email address');
+                }
+
+                // Send to Telegram
+                await telegramService.sendMessage(formData);
+
+                // Show success message
+                submitBtn.textContent = '✅ Message Sent!';
+                submitBtn.style.backgroundColor = '#4CAF50';
+
+                // Clear form
+                contactForm.reset();
+
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.backgroundColor = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+
+            } catch (error) {
+                console.error('Form submission error:', error);
+
+                // Show error message
+                submitBtn.textContent = '❌ ' + error.message;
+                submitBtn.style.backgroundColor = '#f44336';
+
+                // Reset button after 4 seconds
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.backgroundColor = '';
+                    submitBtn.disabled = false;
+                }, 4000);
+            }
+        });
+    }
+});
+
 
 
 
